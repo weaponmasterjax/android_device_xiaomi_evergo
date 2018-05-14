@@ -82,8 +82,7 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session.vendor \
     libtinycompress \
     libaudiofoundation.vendor \
-    libaudiopreprocessing.vendor \
-    tinymix
+    libaudiopreprocessing.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio,$(TARGET_COPY_OUT_VENDOR)/etc)
