@@ -73,9 +73,10 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_evergo
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_evergo
 
 # Kernel
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
+BOARD_KERNEL_CMDLINE := \
+	bootopt=64S3,32N2,64N2 \
+	androidboot.selinux=permissive \
+	androidboot.init_fatal_reboot_target=recovery
 
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
