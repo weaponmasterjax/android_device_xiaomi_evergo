@@ -20,6 +20,9 @@ $(call inherit-product, vendor/xiaomi/evergo/evergo-vendor.mk)
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# Speed profile services and wifi-service to reduce RAM and storage
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
