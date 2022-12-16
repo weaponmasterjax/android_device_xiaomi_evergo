@@ -325,11 +325,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
+# Lineage Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 # Runtime Resource Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayEvergo \
-    TetheringResOverlayEvergo \
-    WifiResOverlayEvergo
+    TetheringOverlayEvergo \
+    WifiOverlayEvergo \
+    SystemUIOverlayEvergo \
+    SettingsOverlayEvergo
 
 # Screen Resolution
 TARGET_SCREEN_HEIGHT := 2400
