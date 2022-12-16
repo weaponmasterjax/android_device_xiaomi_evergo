@@ -15,7 +15,8 @@
 //
 
 runtime_resource_overlay {
-    name: "SystemUIOverlayEvergo",
+    name: "TetheringOverlayEvergo",
+    certificate: "platform",
     sdk_version: "current",
     resource_dirs: ["res"],
     vendor: true
