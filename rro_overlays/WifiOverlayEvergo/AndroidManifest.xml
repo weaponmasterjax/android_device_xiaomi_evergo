@@ -15,13 +15,13 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.frameworkres.overlay.evergo"
+    package="com.android.wifi.resources.evergo"
     android:versionCode="1"
     android:versionName="1.0">
-    <application 
-      android:hasCode="false"/>
+    <application android:hasCode="false" />
     <overlay
-      android:targetPackage="android"
+      android:targetPackage="com.android.wifi.resources"
+      android:targetName="WifiCustomization"
       android:isStatic="true"
-      android:priority="1"/>
+      android:priority="0"/>
 </manifest>
