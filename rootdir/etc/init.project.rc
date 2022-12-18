@@ -48,6 +48,7 @@ on post-fs-data
     copy /vendor/etc/camera/model/rt_model/preview_cache /data/vendor/camera/model/rt_model/preview_cache
     copy /vendor/etc/camera/model/rt_model/preview_model /data/vendor/camera/model/rt_model/preview_model
     copy /vendor/etc/camera/model/rt_model/preview_policy /data/vendor/camera/model/rt_model/preview_policy
+    copy /mnt/vendor/persist/camera/rear_dc_cal_wu.bin /data/vendor/camera/rear_dc_cal_wu.bin
 
     chmod 0777 /data/vendor/camera/model/dof_model/capture_cache
     chmod 0777 /data/vendor/camera/model/dof_model/capture_model
@@ -55,6 +56,7 @@ on post-fs-data
     chmod 0777 /data/vendor/camera/model/rt_model/preview_cache
     chmod 0777 /data/vendor/camera/model/rt_model/preview_model
     chmod 0777 /data/vendor/camera/model/rt_model/preview_policy
+    chmod 0666 /data/vendor/camera/rear_dc_cal_wu.bin
 
 # for mishow
     chown system system /sys/class/power_supply/battery/input_suspend
