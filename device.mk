@@ -384,6 +384,10 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0.vendor \
     android.hardware.thermal@2.0.vendor
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-V1-ndk_platform.vendor
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0.vendor \
