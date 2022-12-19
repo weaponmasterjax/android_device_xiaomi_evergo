@@ -149,10 +149,10 @@ BOARD_VENDOR := xiaomi
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Vintf
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibility_matrix.xml
-DEVICE_MANIFEST_EVERGO_FILES := $(DEVICE_PATH)/manifest_evergo.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/vintf/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/vintf/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/vintf/framework_compatibility_matrix.xml
+DEVICE_MANIFEST_EVERGO_FILES := $(DEVICE_PATH)/vintf/manifest_evergo.xml
 
 # VNDK
 BOARD_VNDK_VERSION := current
