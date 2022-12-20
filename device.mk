@@ -283,7 +283,7 @@ PRODUCT_PACKAGES += \
 
 # Power configs
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/power/,$(TARGET_COPY_OUT_VENDOR)/etc)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/power/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Properties
 PRODUCT_COPY_FILES += \
