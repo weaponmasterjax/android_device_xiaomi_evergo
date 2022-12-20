@@ -1575,7 +1575,6 @@ vendor/lib/hw/vendor.mediatek.hardware.mms@1.6-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.pq@2.13-impl.so
-vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib/libmtkares.so
 vendor/lib/libmtkcam.atmseventmgr.so
 vendor/lib/libmtkcam.eventcallback.so
@@ -1615,7 +1614,6 @@ vendor/lib/vendor.mediatek.hardware.mms@1.6.so
 vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so
 vendor/lib/vendor.mediatek.hardware.mtkpower@1.1.so
 vendor/lib/vendor.mediatek.hardware.mtkpower@1.2.so
-vendor/lib/vendor.mediatek.hardware.netdagent@1.0.so
 vendor/lib/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib/vendor.mediatek.hardware.nvram@1.1.so
 vendor/lib/vendor.mediatek.hardware.nwk_opt@1.0.so
@@ -1634,7 +1632,6 @@ vendor/lib/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib/vendor.mediatek.hardware.pq@2.9.so
 vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
-vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib64/android.hardware.power-service-mediatek.so
 vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
 vendor/lib64/hw/vendor.mediatek.hardware.charge@1.0-impl.so
@@ -1642,7 +1639,6 @@ vendor/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so
-vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib64/libmtk-fusion-ril-prop-vsim.so
 vendor/lib64/libmtk-ril.so
 vendor/lib64/libmtkares.so
@@ -1760,7 +1756,6 @@ vendor/lib64/vendor.mediatek.hardware.mtkpower@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkpower@1.1.so
 vendor/lib64/vendor.mediatek.hardware.mtkpower@1.2.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
-vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 vendor/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so
@@ -1779,7 +1774,6 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.6.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
-vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # NFC
 
@@ -1993,7 +1987,6 @@ vendor/bin/mtk_agpsd
 vendor/bin/mtk_pkm_service
 vendor/bin/mtk_plpath_utils_ota
 vendor/bin/muxreport
-vendor/bin/netdagent
 vendor/bin/netdc
 vendor/bin/nvram_daemon
 vendor/bin/rcs_volte_stack
@@ -2102,7 +2095,6 @@ vendor/etc/init/mtkrild.rc
 vendor/etc/init/mtk_agpsd_p.rc
 vendor/etc/init/mtk_pkm_service.rc
 vendor/etc/init/muxreport.rc
-vendor/etc/init/netdagent.rc
 vendor/etc/init/networksetting.rc
 vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/tetheroffloadservice.rc
