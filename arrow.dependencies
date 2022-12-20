@@ -9,10 +9,4 @@
 		"target_path"	:	"device/mediatek/sepolicy_vndr",
 		"branch"	:	"twelve"
 	}
-	{
-		"remote"	:	"gitlab",
-		"repository"	:	"MindTheGapps/vendor_gapps",
-		"target_path"	:	"vendor/gapps",
-		"branch"	:	"sigma"
-	}
 ]
