@@ -14,9 +14,6 @@ $(call inherit-product, vendor/lineage/config/common.mk)
 # Inherit from evergo device
 $(call inherit-product, device/xiaomi/evergo/device.mk)
 
-# Inherit vendor gapps from MindTheGapps 
-$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
-
 # Lineage Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 
