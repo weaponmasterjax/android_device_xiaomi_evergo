@@ -281,6 +281,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.1.vendor \
     android.hardware.power@1.2.vendor
 
+# Power configs
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/power/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 # Properties
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/boardid_property,$(TARGET_COPY_OUT_VENDOR)/etc)

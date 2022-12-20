@@ -736,6 +736,12 @@ vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 
 # Camera - from opal
+vendor/lib/gc02m1aac_mipi_raw_tuning.so
+vendor/lib/gc02m1ofilm_mipi_raw_tuning.so
+vendor/lib/s5k3l6aac_mipi_raw_tuning.so
+vendor/lib/s5k3l6qtech_mipi_raw_tuning.so
+vendor/lib/s5kjn1aac_mipi_raw_tuning.so
+vendor/lib/s5kjn1ofilm_mipi_raw_tuning.so
 vendor/lib/libCamera_gc02m1aacmipiraw_Default_Capture.so
 vendor/lib/libCamera_gc02m1aacmipiraw_Default_Preview.so
 vendor/lib/libCamera_gc02m1aacmipiraw_Default_Video.so
@@ -946,6 +952,18 @@ vendor/lib/libCamera_s5kjn1ofilmmipiraw_Wechat_Capture_Call.so
 vendor/lib/libCamera_s5kjn1ofilmmipiraw_Wechat_Capture.so
 vendor/lib/libCamera_s5kjn1sunnymipiraw_Flash_Capture_Zoom1.so
 vendor/lib/libCamera_s5kjn1sunnymipiraw_Flash_Capture_Zoom2.so
+vendor/lib64/gc02m1aac_mipi_raw_IdxMgr.so
+vendor/lib64/gc02m1aac_mipi_raw_tuning.so
+vendor/lib64/gc02m1ofilm_mipi_raw_IdxMgr.so
+vendor/lib64/gc02m1ofilm_mipi_raw_tuning.so
+vendor/lib64/s5k3l6aac_mipi_raw_IdxMgr.so
+vendor/lib64/s5k3l6aac_mipi_raw_tuning.so
+vendor/lib64/s5k3l6qtech_mipi_raw_IdxMgr.so
+vendor/lib64/s5k3l6qtech_mipi_raw_tuning.so
+vendor/lib64/s5kjn1aac_mipi_raw_IdxMgr.so
+vendor/lib64/s5kjn1aac_mipi_raw_tuning.so
+vendor/lib64/s5kjn1ofilm_mipi_raw_IdxMgr.so
+vendor/lib64/s5kjn1ofilm_mipi_raw_tuning.so
 vendor/lib64/libCamera_gc02m1aacmipiraw_Default_Capture.so
 vendor/lib64/libCamera_gc02m1aacmipiraw_Default_Preview.so
 vendor/lib64/libCamera_gc02m1aacmipiraw_Default_Video.so
