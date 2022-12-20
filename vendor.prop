@@ -16,6 +16,7 @@ debug.sf.enable_hwc_vds=0
 debug.sf.latch_unsignaled=1
 debug.svi.logs=1
 debug.sf.disable_client_composition_cache=1
+debug.sf.enable_gl_backpressure=1
 drm.service.enabled=true
 init.userspace_reboot.is_supported=true
 log.tag.stats_log=I
