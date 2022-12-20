@@ -14,6 +14,9 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 # Inherit from evergo device
 $(call inherit-product, device/xiaomi/evergo/device.mk)
 
+# Inherit from evergo interfaces makefile
+$(call inherit-product, device/xiaomi/evergo/mtk-interfaces.mk)
+
 # ArrowOS Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 
