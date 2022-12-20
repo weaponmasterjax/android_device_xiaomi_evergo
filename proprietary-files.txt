@@ -1101,6 +1101,7 @@ vendor/firmware/164_alert_RTP.bin
 vendor/firmware/165_feedbackNegativeLight_RTP.bin
 vendor/firmware/166_feedbackNeutral_RTP.bin
 vendor/firmware/167_feedbackPositive_RTP.bin
+vendor/firmware/168_fingerprintRecord_RTP.bin
 vendor/firmware/169_lockdown_RTP.bin
 vendor/firmware/16_ringTone4_RTP.bin
 vendor/firmware/170_slidingDamping_RTP.bin
@@ -1264,6 +1265,7 @@ vendor/firmware/feedback_negative_light_rtp.bin
 vendor/firmware/feedback_neutral_rtp.bin
 vendor/firmware/feedback_positive_rtp.bin
 vendor/firmware/Field_Trip_RTP.bin
+vendor/firmware/fingerprint_record_rtp.bin
 vendor/firmware/firearms_akm_RTP.bin
 vendor/firmware/firearms_awm_RTP.bin
 vendor/firmware/firearms_dp28_RTP.bin
