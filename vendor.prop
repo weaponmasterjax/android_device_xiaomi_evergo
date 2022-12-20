@@ -292,6 +292,7 @@ ro.config.alarm_alert=Alarm_Classic.ogg
 ro.config.notification_sound=OnTheHunt.ogg
 ro.config.vc_call_vol_steps=11
 ro.control_privapp_permissions=enforce
+ro.config.avoid_gfx_accel=true
 ro.crypto.volume.filenames_mode=aes-256-cts
 ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
 ro.gfx.driver.0=com.mediatek.mt6833.gamedriver
