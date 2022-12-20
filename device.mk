@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# MTK Vendor Repos
+$(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
+
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
@@ -338,6 +341,12 @@ PRODUCT_COPY_FILES += \
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
+
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
 
 # Lineage Overlays
 DEVICE_PACKAGE_OVERLAYS += \
