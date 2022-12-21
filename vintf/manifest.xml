@@ -10,6 +10,22 @@
         <fqname>@7.0::IEffectsFactory/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.authsecret</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IAuthSecret/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.configstore</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ISurfaceFlingerConfigs/default</fqname>
+        <fqname>@1.1::ISurfaceFlingerConfigs/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.input.classifier</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IInputClassifier/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>
         <fqname>@1.1::IBluetoothHci/default</fqname>
@@ -30,15 +46,9 @@
         <fqname>@2.6::ICameraProvider/internal/0</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.drm</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.4::ICryptoFactory/clearkey</fqname>
-        <fqname>@1.4::IDrmFactory/clearkey</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
-        <fqname>@2.1::IBiometricsFingerprint/clearkey</fqname>
+        <fqname>@2.1::IBiometricsFingerprint/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.gatekeeper</name>
@@ -82,6 +92,16 @@
         <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.oemlock</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IOemLock/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.power.stats</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IPowerStats/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
         <fqname>@1.2::IRadio/em1</fqname>
@@ -117,6 +137,7 @@
         <name>android.hardware.sensors</name>
         <transport>hwbinder</transport>
         <fqname>@2.0::ISensors/default</fqname>
+        <fqname>@2.1::ISensors/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.soundtrigger</name>
@@ -138,6 +159,11 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::IThermal/default</fqname>
         <fqname>@2.0::IThermal/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.weaver</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IWeaver/default</fqname>
     </hal>
     <hal format="hidl">
         <name>interfaces.factoryAta</name>
