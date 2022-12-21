@@ -169,6 +169,11 @@
         <fqname>@1.0::IISPModule/internal/0</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.mediatek.hardware.camera.postproc</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IPostDevice/internal/0</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.mediatek.hardware.charge</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::ICharge/default</fqname>
