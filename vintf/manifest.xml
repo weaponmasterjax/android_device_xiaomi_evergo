@@ -289,9 +289,4 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::ISoter/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>vendor.lineage.fastcharge</name>
-        <transport>hwbinder</transport>
-        <fqname>1.0::IFastCharge/default</fqname>
-    </hal>
 </manifest>
