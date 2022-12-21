@@ -628,6 +628,16 @@
         </interface>
         <fqname>@1.0::ISoter/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.lineage.fastcharge</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IFastCharge</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IFastCharge/default</fqname>
+    </hal>
     <sepolicy>
         <version>31.0</version>
     </sepolicy>
