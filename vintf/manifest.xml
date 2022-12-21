@@ -17,12 +17,6 @@
         <fqname>@1.0::IAuthSecret/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.configstore</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::ISurfaceFlingerConfigs/default</fqname>
-        <fqname>@1.1::ISurfaceFlingerConfigs/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.input.classifier</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IInputClassifier/default</fqname>
