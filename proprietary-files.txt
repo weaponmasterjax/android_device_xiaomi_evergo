@@ -1179,6 +1179,13 @@ vendor/lib64/libCamera_s5kjn1sunnymipiraw_Flash_Capture_Zoom2.so
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_super_night_raw.so
 
+# Camera-arcsoft from opal
+vendor/lib64/libarcsoft_dualcam_refocus_image.so
+vendor/lib64/libarcsoft_dualcam_refocus_video.so
+vendor/lib64/libarcsoft_hdr_detection.so
+vendor/lib64/libarcsoft_high_dynamic_range.so
+vendor/lib64/libarcsoft_low_light_hdr.so
+
 # Camera-bin
 vendor/bin/hw/camerahalserver
 
