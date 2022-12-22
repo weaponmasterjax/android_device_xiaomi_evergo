@@ -1185,6 +1185,7 @@ vendor/lib64/libarcsoft_dualcam_refocus_video.so
 vendor/lib64/libarcsoft_hdr_detection.so
 vendor/lib64/libarcsoft_high_dynamic_range.so
 vendor/lib64/libarcsoft_low_light_hdr.so
+vendor/lib64/libwa_widelens_undistort.so
 
 # Camera-bin
 vendor/bin/hw/camerahalserver
