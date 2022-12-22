@@ -503,5 +503,6 @@ vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 vendor.mtk.camera.app.fd.video=1
 vendor.mtk.vdec.waitkeyframeforplay=9
 vendor.sys.vm.watermarkscalefactor=1
+vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 import /vendor/etc/${ro.boot.board_id}.prop
