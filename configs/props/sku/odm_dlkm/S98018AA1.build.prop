@@ -8,5 +8,5 @@ ro.odm_dlkm.model=Redmi Note 11S 5G
 ro.odm_dlkm.board=opal
 ro.odm_dlkm.device=opal
 ro.odm_dlkm.name=opal_global
-ro.odm_dlkm.build.fingerprint=Redmi/opal_global/opal:12/${ro.odm_dlkm.build.id}/V13.0.4.0.SGBMIXM:user/release-keys
+ro.odm_dlkm.build.fingerprint=Redmi/opal_global/opal:12/SP1A.210812.016/V13.0.4.0.SGBMIXM:user/release-keys
 ro.odm_dlkm.build.version.incremental=V13.0.4.0.SGBMIXM

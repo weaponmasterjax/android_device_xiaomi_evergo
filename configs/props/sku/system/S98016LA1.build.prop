@@ -9,9 +9,9 @@ ro.system.model=POCO M4 Pro 5G
 ro.system.board=evergo
 ro.system.device=evergo
 ro.system.name=evergo_p_in
-ro.system.build.fingerprint=POCO/evergo_p_in/evergo:12/${ro.system.build.id}/V13.0.6.0.SGBINXM:user/release-keys
+ro.system.build.fingerprint=POCO/evergo_p_in/evergo:12/SP1A.210812.016/V13.0.6.0.SGBINXM:user/release-keys
 ro.system.build.version.incremental=V13.0.6.0.SGBINXM
 # ADDITIONAL CUSTOM PROPERTIES
-ro.product.wt.boardid=${ro.boot.board_id}
-ro.product.subproject=${ro.boot.board_id}
+ro.product.wt.boardid=S98016LA1
+ro.product.subproject=S98016LA1
 ro.product.cert=22031116AI
