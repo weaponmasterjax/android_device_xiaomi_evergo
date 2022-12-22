@@ -13,7 +13,6 @@ debug.mediatek.disp_decompress=1
 debug.mtk_tflite.target_nnapi=29
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=0
-debug.sf.latch_unsignaled=1
 debug.svi.logs=1
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=1
