@@ -1,0 +1,18 @@
+# Device
+ro.product.vendor.brand=POCO
+ro.product.vendor.device=evergo
+ro.product.vendor.manufacturer=Xiaomi
+ro.product.vendor.model=POCO M4 Pro 5G
+ro.product.vendor.marketname=POCO M4 Pro 5G
+ro.product.vendor.name=evergo_p_in
+ro.vendor.model=POCO M4 Pro 5G
+ro.vendor.board=evergo
+ro.vendor.device=evergo
+ro.vendor.name=evergo_p_in
+ro.vendor.build.fingerprint=POCO/evergo_p_in/evergo:12/${ro.vendor.build.id}/V13.0.6.0.SGBINXM:user/release-keys
+ro.bootimage.build.fingerprint=${ro.vendor.build.fingerprint}
+ro.vendor.build.version.incremental=V13.0.6.0.SGBINXM
+# ADDITIONAL CUSTOM PROPERTIES
+ro.product.wt.boardid=${ro.boot.board_id}
+ro.product.subproject=${ro.boot.board_id}
+ro.product.cert=22031116AI

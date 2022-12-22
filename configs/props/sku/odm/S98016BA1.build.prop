@@ -1,0 +1,17 @@
+# Device
+ro.product.odm.brand=Redmi
+ro.product.odm.device=evergo
+ro.product.odm.manufacturer=Xiaomi
+ro.product.odm.model=Redmi Note 11T 5G
+ro.product.odm.marketname=Redmi Note 11T 5G
+ro.product.odm.name=evergo_in
+ro.odm.model=Redmi Note 11T 5G
+ro.odm.board=evergo
+ro.odm.device=evergo
+ro.odm.name=evergo_in
+ro.odm.build.fingerprint=Redmi/evergo_in/evergo:12/${ro.odm.build.id}/V13.0.6.0.SGBINXM:user/release-keys
+ro.odm.build.version.incremental=V13.0.6.0.SGBINXM
+# ADDITIONAL CUSTOM PROPERTIES
+ro.product.wt.boardid=${ro.boot.board_id}
+ro.product.subproject=${ro.boot.board_id}
+ro.product.cert=21091116AI
