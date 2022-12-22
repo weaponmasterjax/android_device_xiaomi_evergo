@@ -9,9 +9,9 @@ ro.product.model=Redmi Note 11T 5G
 ro.product.board=evergo
 ro.product.device=evergo
 ro.product.name=evergo_in
-ro.product.build.fingerprint=Redmi/evergo_in/evergo:12/${ro.product.build.id}/V13.0.6.0.SGBINXM:user/release-keys
+ro.product.build.fingerprint=Redmi/evergo_in/evergo:12/SP1A.210812.016/V13.0.6.0.SGBINXM:user/release-keys
 ro.product.build.version.incremental=V13.0.6.0.SGBINXM
 # ADDITIONAL CUSTOM PROPERTIES
-ro.product.wt.boardid=${ro.boot.board_id}
-ro.product.subproject=${ro.boot.board_id}
+ro.product.wt.boardid=S98016BA1
+ro.product.subproject=S98016BA1
 ro.product.cert=21091116AI

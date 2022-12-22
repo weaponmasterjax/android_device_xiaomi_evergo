@@ -9,9 +9,9 @@ ro.product.model=Redmi Note 11S 5G
 ro.product.board=opal
 ro.product.device=opal
 ro.product.name=opal_global
-ro.product.build.fingerprint=Redmi/opal_global/opal:12/${ro.product.build.id}/V13.0.4.0.SGBMIXM:user/release-keys
+ro.product.build.fingerprint=Redmi/opal_global/opal:12/SP1A.210812.016/V13.0.4.0.SGBMIXM:user/release-keys
 ro.product.build.version.incremental=V13.0.4.0.SGBMIXM
 # ADDITIONAL CUSTOM PROPERTIES
-ro.product.wt.boardid=${ro.boot.board_id}
-ro.product.subproject=${ro.boot.board_id}
+ro.product.wt.boardid=S98018AA1
+ro.product.subproject=S98018AA1
 ro.product.cert=22031116BG
