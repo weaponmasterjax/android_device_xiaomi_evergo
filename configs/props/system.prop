@@ -158,4 +158,4 @@ wifi.interface=wlan0
 wifi.tethering.interface=ap0
 
 # Inherit device specific props
-import /system/build_${ro.boot.board_id}.build.prop
+import /system/${ro.boot.board_id}.build.prop
