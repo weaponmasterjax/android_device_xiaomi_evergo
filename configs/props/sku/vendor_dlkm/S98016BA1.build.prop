@@ -1,0 +1,12 @@
+# Device
+ro.product.vendor_dlkm.brand=Redmi
+ro.product.vendor_dlkm.device=evergo
+ro.product.vendor_dlkm.manufacturer=Xiaomi
+ro.product.vendor_dlkm.model=Redmi Note 11T 5G
+ro.product.vendor_dlkm.name=evergo_in
+ro.vendor_dlkm.model=Redmi Note 11T 5G
+ro.vendor_dlkm.board=evergo
+ro.vendor_dlkm.device=evergo
+ro.vendor_dlkm.name=evergo_in
+ro.vendor_dlkm.build.fingerprint=Redmi/evergo_in/evergo:12/${ro.vendor_dlkm.build.id}/V13.0.6.0.SGBINXM:user/release-keys
+ro.vendor_dlkm.build.version.incremental=V13.0.6.0.SGBINXM

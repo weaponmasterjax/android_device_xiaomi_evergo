@@ -1,0 +1,12 @@
+# Device
+ro.product.odm_dlkm.brand=POCO
+ro.product.odm_dlkm.device=evergo
+ro.product.odm_dlkm.manufacturer=Xiaomi
+ro.product.odm_dlkm.model=POCO M4 Pro 5G
+ro.product.odm_dlkm.name=evergo_p_in
+ro.odm_dlkm.model=POCO M4 Pro 5G
+ro.odm_dlkm.board=evergo
+ro.odm_dlkm.device=evergo
+ro.odm_dlkm.name=evergo_p_in
+ro.odm_dlkm.build.fingerprint=POCO/evergo_p_in/evergo:12/${ro.odm_dlkm.build.id}/V13.0.6.0.SGBINXM:user/release-keys
+ro.odm_dlkm.build.version.incremental=V13.0.6.0.SGBINXM

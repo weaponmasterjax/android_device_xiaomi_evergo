@@ -1,0 +1,17 @@
+# Device
+ro.product.product.brand=POCO
+ro.product.product.device=evergreen
+ro.product.product.manufacturer=Xiaomi
+ro.product.product.model=POCO M4 Pro 5G
+ro.product.product.marketname=POCO M4 Pro 5G
+ro.product.product.name=evergreen_global
+ro.product.model=POCO M4 Pro 5G
+ro.product.board=evergreen
+ro.product.device=evergreen
+ro.product.name=evergreen_global
+ro.product.build.fingerprint=POCO/evergreen_global/evergreen:12/${ro.product.build.id}/V13.0.4.0.SGBMIXM:user/release-keys
+ro.product.build.version.incremental=V13.0.4.0.SGBMIXM
+# ADDITIONAL CUSTOM PROPERTIES
+ro.product.wt.boardid=${ro.boot.board_id}
+ro.product.subproject=${ro.boot.board_id}
+ro.product.cert=21091116AG

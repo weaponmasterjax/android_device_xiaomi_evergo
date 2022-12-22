@@ -1,0 +1,17 @@
+# Device
+ro.product.system.brand=Redmi
+ro.product.system.device=opal
+ro.product.system.manufacturer=Xiaomi
+ro.product.system.model=Redmi Note 11S 5G
+ro.product.system.marketname=Redmi Note 11S 5G
+ro.product.system.name=opal_global
+ro.system.model=Redmi Note 11S 5G
+ro.system.board=opal
+ro.system.device=opal
+ro.system.name=opal_global
+ro.system.build.fingerprint=Redmi/opal_global/opal:12/${ro.system.build.id}/V13.0.4.0.SGBMIXM:user/release-keys
+ro.system.build.version.incremental=V13.0.4.0.SGBMIXM
+# ADDITIONAL CUSTOM PROPERTIES
+ro.product.wt.boardid=${ro.boot.board_id}
+ro.product.subproject=${ro.boot.board_id}
+ro.product.cert=22031116BG
