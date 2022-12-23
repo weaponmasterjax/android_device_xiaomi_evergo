@@ -370,10 +370,8 @@ PRODUCT_COPY_FILES += \
 # Overridden props
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 PRODUCT_SYSTEM_PROPERTIES := true
-PRODUCT_PRODUCT_PROPERTIES := true
-PRODUCT_SYSTEM_EXT_PROPERTIES := true
 PRODUCT_VENDOR_PROPERTIES := true
-include $(DEVICE_PATH)/configs/props/overrides.mk
+include $(LOCAL_PATH)/configs/props/overrides.mk
 
 # Screen Resolution
 TARGET_SCREEN_HEIGHT := 2400
