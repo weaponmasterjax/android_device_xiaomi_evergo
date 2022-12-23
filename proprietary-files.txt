@@ -1782,6 +1782,7 @@ lib/libmtkperf_client.so
 lib/libsysenv_system.so
 lib/libvcodec_cap.so
 lib/libvcodec_capenc.so
+lib64/libhidltransport.so
 lib64/libcomutils.so
 lib64/libimsma.so
 lib64/libimsma_adapt.so
