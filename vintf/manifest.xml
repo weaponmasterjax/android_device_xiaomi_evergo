@@ -134,6 +134,13 @@
         <fqname>@2.0::IThermal/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>com.fingerprints.extension</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IFingerprintEngineering/default</fqname>
+        <fqname>@1.0::IFingerprintNavigation/default</fqname>
+        <fqname>@1.0::IFingerprintSensorTest/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>interfaces.factoryAta</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IFactoryAta/default</fqname>
@@ -142,6 +149,12 @@
         <name>interfaces.factoryInterface</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IFactoryInterface/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::IGoodixFingerprintDaemon/default</fqname>
+        <fqname>@2.1::IGoodixFingerprintDaemonExt/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.apmonitor</name>
