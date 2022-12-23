@@ -367,6 +367,14 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/sku/odm,$(TARGET_COPY_OUT_VENDOR)/odm/etc) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/sku/odm_dlkm,$(TARGET_COPY_OUT_VENDOR)/odm_dlkm/etc)
 
+# Overridden props
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+PRODUCT_SYSTEM_PROPERTIES := true
+PRODUCT_PRODUCT_PROPERTIES := true
+PRODUCT_SYSTEM_EXT_PROPERTIES := true
+PRODUCT_VENDOR_PROPERTIES := true
+include $(DEVICE_PATH)/configs/props/overrides.mk
+
 # Screen Resolution
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
