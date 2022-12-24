@@ -1717,6 +1717,9 @@ vendor/lib64/hw/gps.default.so
 vendor/lib/hw/gatekeeper.beanpod.so
 vendor/lib64/hw/gatekeeper.beanpod.so
 
+# Gboard theme
+etc/gboard_theme/xiaomi_theme_20171222.zip
+
 # Graphics
 vendor/lib/egl/egl.cfg
 vendor/lib/egl/libGLES_mali.so
