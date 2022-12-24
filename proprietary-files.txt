@@ -2109,6 +2109,12 @@ vendor/lib64/hw/sensors.touch.detect.so
 vendor/lib64/libnotifyaudiohal.so
 vendor/lib64/libsensor_custom.so
 
+# SPN
+etc/apns-conf.xml
+etc/fiveG-apns-conf.xml
+etc/spn-conf.xml
+etc/xcap-apns-conf.xml
+
 # Soter
 -vendor/app/SoterService/SoterService.apk
 vendor/bin/hw/vendor.microtrust.hardware.soter@1.0-service
