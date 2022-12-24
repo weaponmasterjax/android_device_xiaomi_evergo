@@ -36,19 +36,13 @@
         <version>1.0-4</version>
         <interface>
             <name>ICryptoFactory</name>
-            <instance>clearkey</instance>
-        </interface>
-        <interface>
-            <name>IDrmFactory</name>
-            <instance>clearkey</instance>
-        </interface>
-        <interface>
-            <name>ICryptoFactory</name>
             <instance>widevine</instance>
+            <instance>default</instance>
         </interface>
         <interface>
             <name>IDrmFactory</name>
             <instance>widevine</instance>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
