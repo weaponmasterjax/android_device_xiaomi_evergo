@@ -1179,6 +1179,14 @@ vendor/lib64/libCamera_s5kjn1sunnymipiraw_Flash_Capture_Zoom2.so
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_super_night_raw.so
 
+# Camera-arcsoft from opal
+vendor/lib64/libarcsoft_dualcam_refocus_image.so
+vendor/lib64/libarcsoft_dualcam_refocus_video.so
+vendor/lib64/libarcsoft_hdr_detection.so
+vendor/lib64/libarcsoft_high_dynamic_range.so
+vendor/lib64/libarcsoft_low_light_hdr.so
+vendor/lib64/libwa_widelens_undistort.so
+
 # Camera-bin
 vendor/bin/hw/camerahalserver
 
@@ -1214,9 +1222,12 @@ vendor/lib/liboemcrypto.so
 vendor/lib64/liboemcrypto.so
 
 # DRM-Hardware
+vendor/bin/hw/android.hardware.drm@1.4-service.clearkey
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
+vendor/etc/init/android.hardware.drm@1.4-service.clearkey.rc
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.clearkey.xml
 
 # DRM-Widevine
 vendor/lib/libwvhidl.so
@@ -1255,6 +1266,7 @@ vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
+vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 
 # Firmware
 vendor/etc/firmware/novatek_ts_ct_fw.bin
@@ -1706,6 +1718,9 @@ vendor/lib64/hw/gps.default.so
 vendor/lib/hw/gatekeeper.beanpod.so
 vendor/lib64/hw/gatekeeper.beanpod.so
 
+# Gboard theme
+etc/gboard_theme/xiaomi_theme_20171222.zip
+
 # Graphics
 vendor/lib/egl/egl.cfg
 vendor/lib/egl/libGLES_mali.so
@@ -1724,6 +1739,10 @@ vendor/lib64/egl/libMEOW_qt.so
 vendor/lib64/egl/libMEOW_trace.so
 vendor/lib64/hw/vulkan.mali.so
 vendor/lib64/libOpenCL.so
+
+# Installd
+bin/installd
+etc/init/installd.rc
 
 # HotwordEnrollment
 -product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk
@@ -1753,6 +1772,46 @@ vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
+
+# MTK-IMS
+-framework/mediatek-common.jar
+-framework/mediatek-framework.jar
+-framework/mediatek-ims-base.jar
+-framework/mediatek-ims-common.jar
+-framework/mediatek-telecom-common.jar
+-framework/mediatek-telephony-base.jar
+-framework/mediatek-telephony-common.jar
+-priv-app/ImsService/ImsService.apk
+bin/vtservice
+etc/init/init.vtservice.rc
+framework/mediatek-ims-extension-plugin.jar
+framework/mediatek-ims-legacy.jar
+lib/libhidltransport.so
+lib/libmtk_vt_wrapper.so
+lib/libmtkavenhancements.so
+lib/libmtkperf_client.so
+lib/libsysenv_system.so
+lib/libvcodec_cap.so
+lib/libvcodec_capenc.so
+lib64/libhidltransport.so
+lib64/libcomutils.so
+lib64/libimsma.so
+lib64/libimsma_adapt.so
+lib64/libimsma_rtp.so
+lib64/libimsma_socketwrapper.so
+lib64/libmtk_vt_service.so
+lib64/libmtk_vt_wrapper.so
+lib64/libmtkavenhancements.so
+lib64/libmtkperf_client.so
+lib64/libsignal.so
+lib64/libsink.so
+lib64/libsource.so
+lib64/libsysenv_system.so
+lib64/libvcodec_cap.so
+lib64/libvcodec_capenc.so
+lib64/libvt_avsync.so
+system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Lights
 vendor/bin/hw/android.hardware.lights-service.mediatek
@@ -2011,6 +2070,21 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
+# MIUI Camera
+-priv-app/MiuiCamera/MiuiCamera.apk
+lib64/libcamera_algoup_jni.xiaomi.so
+lib64/libcamera_ispinterface_jni.xiaomi.so
+lib64/libcamera_mianode_jni.xiaomi.so
+lib64/libcameraservice.so
+lib64/libdoc_photo.so
+lib64/libdoc_photo_c++_shared.so
+lib64/libcamera_algoup_jni.xiaomi.so
+lib64/libcamera_ispinterface_jni.xiaomi.so
+lib64/libcamera_mianode_jni.xiaomi.so
+lib64/libmtkisp_metadata_sys.so
+lib64/vendor.mediatek.hardware.camera.isphal@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.camera.atms@1.0.so
+
 # NFC
 
 # Perf
@@ -2036,12 +2110,23 @@ vendor/lib64/hw/sensors.touch.detect.so
 vendor/lib64/libnotifyaudiohal.so
 vendor/lib64/libsensor_custom.so
 
+# SPN
+etc/apns-conf.xml
+etc/fiveG-apns-conf.xml
+etc/spn-conf.xml
+etc/xcap-apns-conf.xml
+
 # Soter
 -vendor/app/SoterService/SoterService.apk
 vendor/bin/hw/vendor.microtrust.hardware.soter@1.0-service
 vendor/bin/SoterProvisioningTool
 vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc
 vendor/lib64/vendor.microtrust.hardware.soter@1.0.so
+
+# TER Service
+bin/terservice
+etc/init/terserver.rc
+lib64/libterservice.so
 
 # Thermal
 vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
@@ -2281,7 +2366,6 @@ vendor/etc/ecc_list_OP20.xml
 vendor/etc/ecc_list_OP236.xml
 vendor/etc/ecc_list_preference.xml
 vendor/etc/factory.ini
-vendor/etc/fstb.cfg
 vendor/etc/gbe.cfg
 vendor/etc/gnss/agps_profiles_conf2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
@@ -2580,9 +2664,6 @@ vendor/etc/mpe.conf
 vendor/etc/mtk_omx_core.cfg
 vendor/etc/mtk_platform_codecs_config.xml
 vendor/etc/partition_permission.sh
-vendor/etc/powercontable.xml
-vendor/etc/powerscntbl.xml
-vendor/etc/power_app_cfg.xml
 vendor/etc/screen_light.xml
 vendor/etc/security/cacerts/01419da9.0
 vendor/etc/security/cacerts/04f60c28.0

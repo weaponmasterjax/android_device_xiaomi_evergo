@@ -252,6 +252,12 @@ on post-fs-data
     chmod 0771 /mnt/vendor/nvdata
     mkdir /mnt/vendor/nvdata/media 0771 media audio
 
+    # create audio_param folder
+    mkdir /data/vendor/audiohal
+    chown root system /data/vendor/audiohal
+    chmod 0771 /data/vendor/audiohal
+    mkdir /data/vendor/audiohal/audio_param 0771 media audio
+
     #Create cct mount point
     mkdir /mnt/vendor/cct
     chown root system /mnt/vendor/cct

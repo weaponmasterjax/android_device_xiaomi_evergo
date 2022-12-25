@@ -7,6 +7,12 @@
 		"remote"	:	"github",
 		"repository"	:	"PixelExperience/device_mediatek_sepolicy_vndr",
 		"target_path"	:	"device/mediatek/sepolicy_vndr",
-		"branch"	:	"twelve"
+		"branch"	:	"thirteen"
+	}
+	{
+		"remote"	:	"github",
+		"repository"	:	"PixelExperience/hardware_xiaomi",
+		"target_path"	:	"hardware/xiaomi",
+		"branch"	:	"thirteen"
 	}
 ]
