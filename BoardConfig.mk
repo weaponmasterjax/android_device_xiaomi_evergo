@@ -68,6 +68,10 @@ TARGET_SCREEN_DENSITY := 440
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_evergo
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_evergo
+
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
