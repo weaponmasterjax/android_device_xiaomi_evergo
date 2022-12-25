@@ -1,2 +1,0 @@
-# Inherit device specific props
-import /system/system_ext/${ro.boot.board_id}.build.prop

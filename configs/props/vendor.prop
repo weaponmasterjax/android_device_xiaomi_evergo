@@ -505,7 +505,3 @@ vendor.mtk.camera.app.fd.video=1
 vendor.mtk.vdec.waitkeyframeforplay=9
 vendor.sys.vm.watermarkscalefactor=1
 vendor.sys.thermal.data.path=/data/vendor/thermal/
-
-
-# Inherit device specific props
-import /vendor/${ro.boot.board_id}.build.prop

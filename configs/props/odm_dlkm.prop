@@ -1,2 +1,0 @@
-# Inherit device specific props
-import /vendor/odm_dlkm/etc/${ro.boot.board_id}.build.prop

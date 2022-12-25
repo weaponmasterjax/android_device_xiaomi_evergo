@@ -381,17 +381,6 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayEvergo \
     SettingsOverlayEvergo
 
-# Additional Build Props
-# Usually fingerprint, codename and hostname changes rolling around here.
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/sku/system,$(TARGET_COPY_OUT_SYSTEM)/) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/sku/system_ext,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/sku/product,$(TARGET_COPY_OUT_PRODUCT)/etc) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/sku/vendor,$(TARGET_COPY_OUT_VENDOR)/) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/sku/vendor_dlkm,$(TARGET_COPY_OUT_VENDOR)/vendor_dlkm/etc) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/sku/odm,$(TARGET_COPY_OUT_VENDOR)/odm/etc) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/sku/odm_dlkm,$(TARGET_COPY_OUT_VENDOR)/odm_dlkm/etc)
-
 # Screen Resolution
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
