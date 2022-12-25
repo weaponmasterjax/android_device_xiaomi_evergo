@@ -20,7 +20,6 @@ static const variant_info_t evergo_cn_info = {
     .model = "21091116AC",
     .build_fingerprint = "Redmi/evergo_cn/evergo:12/SP1A.210812.016/V13.0.8.0.SGBCNXM:user/release-keys",
 
-
     .nfc = false,
 };
 
@@ -34,7 +33,6 @@ static const variant_info_t evergo_in_info = {
     .marketname = "Redmi Note 11T 5G",
     .model = "21091116AI",
     .build_fingerprint = "Redmi/evergo_in/evergo:12/SP1A.210812.016/V13.0.6.0.SGBINXM:user/release-keys",
-
 
     .nfc = false,
 };
@@ -50,7 +48,6 @@ static const variant_info_t evergo_in_p_info = {
     .model = "22031116AI",
     .build_fingerprint = "POCO/evergo_p_in/evergo:12/SP1A.210812.016/V13.0.6.0.SGBINXM:user/release-keys",
 
-
     .nfc = false,
 };
 
@@ -64,7 +61,6 @@ static const variant_info_t evergreen_info = {
     .marketname = "POCO M4 Pro 5G",
     .model = "21091116AG",
     .build_fingerprint = "POCO/evergreen_global/evergreen:12/SP1A.210812.016/V13.0.4.0.SGBMIXM:user/release-keys",
-
 
     .nfc = true,
 };
