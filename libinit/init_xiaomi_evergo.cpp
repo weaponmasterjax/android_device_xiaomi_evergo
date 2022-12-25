@@ -15,6 +15,7 @@ static const variant_info_t evergo_cn_info = {
 
     .brand = "Redmi",
     .device = "evergo",
+    .name = "evergo_cn",
     .marketname = "Redmi Note 11 5G",
     .model = "21091116AC",
     .build_fingerprint = "Redmi/evergo_cn/evergo:12/SP1A.210812.016/V13.0.8.0.SGBCNXM:user/release-keys",
@@ -29,6 +30,7 @@ static const variant_info_t evergo_in_info = {
 
     .brand = "Redmi",
     .device = "evergo",
+    .name = "evergo_in",
     .marketname = "Redmi Note 11T 5G",
     .model = "21091116AI",
     .build_fingerprint = "Redmi/evergo_in/evergo:12/SP1A.210812.016/V13.0.6.0.SGBINXM:user/release-keys",
@@ -43,6 +45,7 @@ static const variant_info_t evergo_in_p_info = {
 
     .brand = "POCO",
     .device = "evergo",
+    .name = "evergo_p_in",
     .marketname = "POCO M4 Pro 5G",
     .model = "22031116AI",
     .build_fingerprint = "POCO/evergo_p_in/evergo:12/SP1A.210812.016/V13.0.6.0.SGBINXM:user/release-keys",
@@ -57,6 +60,7 @@ static const variant_info_t evergreen_info = {
 
     .brand = "POCO",
     .device = "evergreen",
+    .name = "evergreen_global",
     .marketname = "POCO M4 Pro 5G",
     .model = "21091116AG",
     .build_fingerprint = "POCO/evergreen_global/evergreen:12/SP1A.210812.016/V13.0.4.0.SGBMIXM:user/release-keys",
@@ -71,6 +75,7 @@ static const variant_info_t opal_info = {
 
     .brand = "Redmi",
     .device = "opal",
+    .name = "opal_global",
     .marketname = "Redmi Note 11S 5G",
     .model = "22031116BG",
     .build_fingerprint = "Redmi/opal_global/opal:12/SP1A.210812.016/V13.0.4.0.SGBMIXM:user/release-keys",
