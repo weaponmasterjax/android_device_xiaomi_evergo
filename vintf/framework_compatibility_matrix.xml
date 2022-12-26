@@ -81,6 +81,11 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
+        <name>android.hardware.power</name>
+        <version>2</version>
+        <fqname>IPower/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>android.hardware.power.stats</name>
         <version>1</version>
         <interface>
