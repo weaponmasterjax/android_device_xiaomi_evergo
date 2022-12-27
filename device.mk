@@ -373,6 +373,10 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
 # Runtime Resource Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayEvergo \
