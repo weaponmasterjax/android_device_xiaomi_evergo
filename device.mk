@@ -254,6 +254,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
 
+# Override props
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+include $(LOCAL_PATH)/configs/props/overrides.mk
+
 # MTK In-Call volumes adjusting service
 PRODUCT_PACKAGES += \
     MtkInCallService
