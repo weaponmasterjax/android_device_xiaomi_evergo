@@ -67,6 +67,12 @@ function blob_fixup() {
     vendor/lib/libaalservice.so)
         "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
         ;;
+    vendor/bin/hw/android.hardware.gnss-service.mediatek)
+        "${PATCHELF}" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk_platform-v32.so" "${2}"
+        ;;
+    vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
+        "${PATCHELF}" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk_platform-v32.so" "${2}"
+        ;;
     vendor/lib64/libaalservice.so)
         "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
         ;;
