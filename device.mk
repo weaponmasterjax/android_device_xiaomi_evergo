@@ -162,8 +162,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0.vendor \
     android.hardware.gnss@1.1.vendor \
     android.hardware.gnss@2.0.vendor \
-    android.hardware.gnss@2.1.vendor \
-    android.hardware.gnss-V1-ndk_platform.vendor
+    android.hardware.gnss@2.1.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -314,7 +313,6 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.1.vendor \
     android.hardware.power@1.2.vendor \
     android.hardware.power-service-mediatek \
-    android.hardware.power-V2-ndk_platform.vendor \
     vendor.mediatek.hardware.power@2.0.vendor \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
 
