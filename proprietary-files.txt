@@ -2167,12 +2167,7 @@ vendor/lib64/hw/thermal_hal.so
 
 # Time
 
-# Vibrator (Xiaomi)
-vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
-vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature@1.0-service.rc
-vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc
--vendor/etc/vintf/manifest/vendor.xiaomi.hardware.vibratorfeature.service.xml
-vendor/lib64/vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk_platform.so
+# Vibrator
 
 # Vintf (MEDIATEK)
 -vendor/etc/vintf/manifest/gnss-default.xml
