@@ -1,0 +1,4 @@
+service vibrator-evergo /vendor/bin/hw/android.hardware.vibrator-service.evergo
+    class hal
+    user system
+    group system

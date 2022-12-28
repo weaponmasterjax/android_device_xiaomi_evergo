@@ -1,0 +1,33 @@
+cc_library_static {
+    name: "libvibratorevergo",
+    vendor: true,
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "android.hardware.vibrator-V2-ndk",
+    ],
+    export_include_dirs: ["include"],
+    srcs: ["Vibrator.cpp"],
+    visibility: [
+        ":__subpackages__",
+        "//hardware/interfaces/tests/extension/vibrator:__subpackages__",
+    ],
+}
+
+cc_binary {
+    name: "android.hardware.vibrator-service.evergo",
+    relative_install_path: "hw",
+    vendor: true,
+    init_rc: ["vibrator-evergo.rc"],
+    vintf_fragments: ["vibrator-evergo.xml"],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "android.hardware.vibrator-V2-ndk",
+    ],
+    static_libs: [
+        "libvibratorevergo",
+    ],
+    srcs: ["main.cpp"],
+}
+
