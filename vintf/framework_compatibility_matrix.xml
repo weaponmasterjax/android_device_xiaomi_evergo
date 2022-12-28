@@ -48,6 +48,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>android.frameworks.sensorservice</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISensorManager</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>android.hardware.audio</name>
         <version>7.1</version>
         <interface>
