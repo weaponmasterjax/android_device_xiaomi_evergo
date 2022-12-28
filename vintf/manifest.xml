@@ -1,9 +1,5 @@
 <manifest version="4.0" type="device" target-level="5">
     <hal format="aidl">
-        <name>android.hardware.bluetooth.audio</name>
-        <fqname>IBluetoothAudioProviderFactory/default</fqname>
-    </hal>
-    <hal format="aidl">
         <name>android.hardware.gnss</name>
         <fqname>IGnss/default</fqname>
     </hal>
