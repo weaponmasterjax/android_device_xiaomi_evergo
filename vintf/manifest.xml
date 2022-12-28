@@ -1,4 +1,28 @@
 <manifest version="4.0" type="device" target-level="5">
+    <hal format="aidl">
+        <name>android.hardware.bluetooth.audio</name>
+        <fqname>IBluetoothAudioProviderFactory/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.gnss</name>
+        <fqname>IGnss/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.power</name>
+        <fqname>IPower/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.power.stats</name>
+        <fqname>IPowerStats/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.wifi.hostapd</name>
+        <fqname>IHostapd/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.wifi.supplicant</name>
+        <fqname>ISupplicant/default</fqname>
+    </hal>
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -14,6 +38,16 @@
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>
         <fqname>@1.1::IBluetoothHci/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.bluetooth.a2dp</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IBluetoothAudioOffload/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.bluetooth.audio</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.2::IBluetoothAudioProvidersFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.boot</name>
@@ -112,6 +146,11 @@
         <name>android.hardware.sensors</name>
         <transport>hwbinder</transport>
         <fqname>@2.0::ISensors/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.frameworks.sensorservice</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ISensorManager/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.soundtrigger</name>
