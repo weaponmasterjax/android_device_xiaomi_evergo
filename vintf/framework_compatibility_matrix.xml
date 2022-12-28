@@ -1,4 +1,32 @@
 <compatibility-matrix version="4.0" type="framework">
+    <hal format="aidl" optional="true">
+        <name>android.hardware.gnss</name>
+        <interface>
+            <name>IGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.power</name>
+        <version>2</version>
+        <fqname>IPower/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.power.stats</name>
+        <version>1</version>
+        <interface>
+            <name>IPowerStats</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.vibrator</name>
+        <version>1-2</version>
+        <interface>
+            <name>IVibrator</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.audio</name>
         <version>7.0</version>
@@ -53,13 +81,6 @@
             <instance>widevine</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.gnss</name>
-        <interface>
-            <name>IGnss</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.media.omx</name>
         <version>1.0</version>
@@ -69,19 +90,6 @@
         </interface>
         <interface>
             <name>IOmxStore</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.power</name>
-        <version>2</version>
-        <fqname>IPower/default</fqname>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.power.stats</name>
-        <version>1</version>
-        <interface>
-            <name>IPowerStats</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -125,14 +133,6 @@
         <version>1.0-3</version>
         <interface>
             <name>IUsb</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.vibrator</name>
-        <version>1-2</version>
-        <interface>
-            <name>IVibrator</name>
             <instance>default</instance>
         </interface>
     </hal>
