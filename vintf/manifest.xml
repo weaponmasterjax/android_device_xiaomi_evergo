@@ -8,6 +8,10 @@
         <fqname>IGnss/default</fqname>
     </hal>
     <hal format="aidl">
+        <name>android.system.keystore2</name>
+        <fqname>IKeystoreService/default</fqname>
+    </hal>
+    <hal format="aidl">
         <name>android.hardware.power</name>
         <fqname>IPower/default</fqname>
     </hal>
