@@ -22,7 +22,6 @@
     <hal format="hidl">
         <name>android.hardware.audio.effect</name>
         <transport>hwbinder</transport>
-        <fqname>@7.0::IEffectsFactory/default</fqname>
         <fqname>@7.1::IEffectsFactory/default</fqname>
     </hal>
     <hal format="hidl">
@@ -78,7 +77,6 @@
     <hal format="hidl">
         <name>android.hardware.keymaster</name>
         <transport>hwbinder</transport>
-        <fqname>@4.0::IKeymasterDevice/default</fqname>
         <fqname>@4.1::IKeymasterDevice/default</fqname>
     </hal>
     <hal format="hidl">
@@ -152,7 +150,6 @@
     <hal format="hidl">
         <name>android.hardware.thermal</name>
         <transport>hwbinder</transport>
-        <fqname>@1.0::IThermal/default</fqname>
         <fqname>@2.0::IThermal/default</fqname>
     </hal>
     <hal format="hidl">
