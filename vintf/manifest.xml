@@ -12,21 +12,12 @@
         <fqname>IPower/default</fqname>
     </hal>
     <hal format="aidl">
-        <name>android.hardware.power.stats</name>
-        <fqname>IPowerStats/default</fqname>
-    </hal>
-    <hal format="aidl">
         <name>android.hardware.wifi.hostapd</name>
         <fqname>IHostapd/default</fqname>
     </hal>
     <hal format="aidl">
         <name>android.hardware.wifi.supplicant</name>
         <fqname>ISupplicant/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.audio</name>
-        <transport>hwbinder</transport>
-        <fqname>@7.1::IDevicesFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.audio.effect</name>
@@ -141,11 +132,6 @@
         <name>android.hardware.sensors</name>
         <transport>hwbinder</transport>
         <fqname>@2.0::ISensors/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.frameworks.sensorservice</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::ISensorManager/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.soundtrigger</name>
