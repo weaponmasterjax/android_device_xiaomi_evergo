@@ -20,6 +20,11 @@
         <fqname>ISupplicant/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.audio</name>
+        <transport>hwbinder</transport>
+        <fqname>@7.1::IDevicesFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.audio.effect</name>
         <transport>hwbinder</transport>
         <fqname>@7.1::IEffectsFactory/default</fqname>
