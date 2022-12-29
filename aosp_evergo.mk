@@ -22,7 +22,7 @@ PRODUCT_DEVICE := evergo
 PRODUCT_NAME := aosp_evergo
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11T 5G
-PRODUCT_MANUFACTURER := xiaomi
+PRODUCT_MANUFACTURER := Xiaomi
 
 # Build info
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
