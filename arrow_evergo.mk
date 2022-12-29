@@ -27,7 +27,4 @@ PRODUCT_MANUFACTURER := xiaomi
 # Build info
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="evergo-user 12 SP1A.210812.016 V13.0.5.0.SGBINXM release-keys"
-
 BUILD_FINGERPRINT := Redmi/evergo_in/evergo:12/SP1A.210812.016/V13.0.5.0.SGBINXM:user/release-keys
