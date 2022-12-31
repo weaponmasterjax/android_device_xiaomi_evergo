@@ -182,6 +182,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>android.hardware.sensors</name>
+        <version>2.0-1</version>
+        <interface>
+            <name>ISensors</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>android.hardware.tetheroffload.control</name>
         <version>1.0-1</version>
         <interface>
