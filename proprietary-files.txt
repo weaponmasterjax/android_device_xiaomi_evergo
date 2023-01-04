@@ -2070,7 +2070,12 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
-# NFC
+# NFC - from POCO/evergreen_global/evergreen:12/SP1A.210812.016/V13.0.4.0.SGBMIXM:user/release-keys
+vendor/etc/libnfc-hal-st.conf|7d8ca0e39963cb52ec3022faf4dd4c2d
+vendor/etc/libnfc-nci.conf|19e2db26dcf96fc64ef2f911d259b859
+vendor/etc/st21nfc_conf.txt|d4695cacb8879ed70fd499af3322813a
+vendor/lib/nfc_nci.st21nfc.st.so|a190c6e7da99f52c99da71f7a8097dd3
+vendor/lib64/nfc_nci.st21nfc.st.so|fc8b4a022936f459ef06b50fced1cfdd
 
 # Perf
 
