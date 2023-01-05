@@ -233,12 +233,6 @@ on property:ro.boot.product.hardware.sku=""
     mount none /dev/null /vendor/etc/libnfc-hal-st.conf bind
     mount none /dev/null /vendor/etc/libnfc-nci.conf bind
     mount none /dev/null /vendor/etc/st21nfc_conf.txt bind
-    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.xml bind
-    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.ese.xml bind
-    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.hce.xml bind
-    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.hcef.xml bind
-    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.uicc.xml bind
-    mount none /dev/null /vendor/etc/permissions/com.android.nfc_extras.xml bind
     mount none /dev/null /vendor/firmware/96_nfcCard_RTP.bin bind
     mount none /dev/null /vendor/firmware/98_nfcCardSlow_RTP.bin bind
     mount none /dev/null /vendor/firmware/NFC_card_rtp.bin bind
@@ -249,7 +243,6 @@ on property:ro.boot.product.hardware.sku=""
     mount none /dev/null /vendor/lib64/android.hardware.nfc@1.0.so bind
     mount none /dev/null /vendor/lib64/android.hardware.nfc@1.1.so bind
     mount none /dev/null /vendor/lib64/android.hardware.nfc@1.2.so bind
-    mount none /dev/null /vendor/etc/permissions/com.android.nfc_extras.xml bind
     mount none /dev/null /product/etc/permissions/android.software.nfc.beam.xml bind
     mount none /dev/null /system/etc/permissions/android.software.nfc.beam.xml bind
     mount none /dev/null /system/etc/permissions/com.android.nfc_extras.xml bind
