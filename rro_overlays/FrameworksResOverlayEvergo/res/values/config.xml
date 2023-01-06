@@ -40,7 +40,8 @@
      <bool name="config_camera_sound_forced">true</bool>
 
      <bool name="config_is_powerbutton_fps">true</bool>
-     
+     <bool name="config_fpCancelIfNotIdle">true</bool>
+
     <!-- Flag specifying whether VoLTE should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
          provisioning, availability etc -->
