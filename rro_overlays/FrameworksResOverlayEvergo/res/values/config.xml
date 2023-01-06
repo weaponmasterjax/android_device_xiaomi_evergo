@@ -931,6 +931,9 @@
     <string-array name="config_biometric_sensors">
         <item>0:2:15</item>
     </string-array>
+         
+    <!-- Does the device has a fps on power. -->
+     <bool name="config_fingerprintWakeAndUnlock">false</bool>
 
     <!-- Enables or disables fading edges when marquee is enabled in TextView.
          Off by default, since the framebuffer readback used to implement the
