@@ -17,35 +17,33 @@
 #pragma once
 
 #include <aidl/android/hardware/vibrator/BnVibrator.h>
-
-
-
-// Values inspired from cannon(g) vibrator HAL
-// https://github.com/StatiXOS/android_device_xiaomi_cannon/commit/f95eff04bbaa6bbbbd340a200ce029ffb889738e
-
-// Define durations for waveforms
-static constexpr uint32_t WAVEFORM_TICK_EFFECT_MS = 10;
-static constexpr uint32_t WAVEFORM_TEXTURE_TICK_EFFECT_MS = 20;
-static constexpr uint32_t WAVEFORM_CLICK_EFFECT_MS = 15;
-static constexpr uint32_t WAVEFORM_HEAVY_CLICK_EFFECT_MS = 30;
-static constexpr uint32_t WAVEFORM_DOUBLE_CLICK_EFFECT_MS = 60;
-static constexpr uint32_t WAVEFORM_THUD_EFFECT_MS = 35;
-static constexpr uint32_t WAVEFORM_POP_EFFECT_MS = 15;
-
-// Select waveform index from firmware through index list
-static constexpr uint32_t WAVEFORM_TICK_EFFECT_INDEX = 1;
-static constexpr uint32_t WAVEFORM_TEXTURE_TICK_EFFECT_INDEX = 4;
-static constexpr uint32_t WAVEFORM_CLICK_EFFECT_INDEX = 2;
-static constexpr uint32_t WAVEFORM_HEAVY_CLICK_EFFECT_INDEX = 5;
-static constexpr uint32_t WAVEFORM_DOUBLE_CLICK_EFFECT_INDEX = 6;
-static constexpr uint32_t WAVEFORM_THUD_EFFECT_INDEX = 7;
+#include <map>
 
 namespace aidl {
 namespace android {
 namespace hardware {
 namespace vibrator {
 
+const std::string kVibratorState    = "/sys/class/leds/vibrator/state";
+const std::string kVibratorDuration = "/sys/class/leds/vibrator/duration";
+const std::string kVibratorActivate = "/sys/class/leds/vibrator/activate";
+const std::string kVibratorStrength = "/sys/kernel/thunderquake_engine/level";
+
+static std::map<Effect, int32_t> vibEffects = {
+    { Effect::CLICK, 50 },
+    { Effect::HEAVY_CLICK, 60 },
+    { Effect::TICK, 32 }
+};
+
+static std::map<EffectStrength, int32_t> vibStrengths = {
+    { EffectStrength::LIGHT, 5},
+    { EffectStrength::MEDIUM, 7},
+    { EffectStrength::STRONG, 11}
+};
+
 class Vibrator : public BnVibrator {
+public:
+    Vibrator();
     ndk::ScopedAStatus getCapabilities(int32_t* _aidl_return) override;
     ndk::ScopedAStatus off() override;
     ndk::ScopedAStatus on(int32_t timeoutMs,
@@ -66,7 +64,6 @@ class Vibrator : public BnVibrator {
     ndk::ScopedAStatus getSupportedAlwaysOnEffects(std::vector<Effect>* _aidl_return) override;
     ndk::ScopedAStatus alwaysOnEnable(int32_t id, Effect effect, EffectStrength strength) override;
     ndk::ScopedAStatus alwaysOnDisable(int32_t id) override;
-    
     ndk::ScopedAStatus getResonantFrequency(float *resonantFreqHz) override;
     ndk::ScopedAStatus getQFactor(float *qFactor) override;
     ndk::ScopedAStatus getFrequencyResolution(float *freqResolutionHz) override;
@@ -77,6 +74,14 @@ class Vibrator : public BnVibrator {
     ndk::ScopedAStatus getSupportedBraking(std::vector<Braking>* supported) override;
     ndk::ScopedAStatus composePwle(const std::vector<PrimitivePwle> &composite,
                                    const std::shared_ptr<IVibratorCallback> &callback) override;
+
+private:
+    static ndk::ScopedAStatus setNode(const std::string path, const std::string value);
+    static ndk::ScopedAStatus setNode(const std::string path, const int32_t value);
+    static bool nodeExists(const std::string path);
+
+    ndk::ScopedAStatus activate(const int32_t timeoutMs);
+    bool mVibratorStrengthSupported;
 };
 
 }  // namespace vibrator

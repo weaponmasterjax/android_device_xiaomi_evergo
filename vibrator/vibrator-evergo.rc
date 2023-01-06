@@ -1,4 +1,8 @@
-service vibrator-evergo /vendor/bin/hw/android.hardware.vibrator-service.evergo
+on init
+    chown system system /sys/kernel/thunderquake_engine/level
+    chown 644 /sys/kernel/thunderquake_engine/level
+    
+service vendor.vibrator-evergo /vendor/bin/hw/android.hardware.vibrator-service.evergo
     class hal
     user system
     group system
