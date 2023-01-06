@@ -228,7 +228,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.mediatek
+    android.hardware.light-service.evergo
 
 # Media
 PRODUCT_COPY_FILES += \
