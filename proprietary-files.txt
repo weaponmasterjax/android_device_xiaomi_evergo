@@ -1266,7 +1266,6 @@ vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
-vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 
 # Firmware
 vendor/etc/firmware/novatek_ts_ct_fw.bin
