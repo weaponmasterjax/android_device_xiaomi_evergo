@@ -135,6 +135,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>android.hardware.biometrics.fingerprint</name>
+        <version>2.1-3</version>
+        <interface>
+            <name>IBiometricsFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>android.hardware.keymaster</name>
         <version>4.0-1</version>
         <interface>
@@ -236,20 +244,20 @@
             <name>IFingerprintNavigation</name>
             <instance>default</instance>
         </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>com.fingerprints.extension</name>
-        <version>1.0</version>
         <interface>
             <name>IFingerprintSensorTest</name>
             <instance>default</instance>
         </interface>
     </hal>
-     <hal format="hidl" optional="true">
-        <name>vendor.xiaomi.hardware.fingerprintextension</name>
-        <version>1.0</version>
+    <hal format="hidl" optional="true">
+        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
+        <version>2.1</version>
         <interface>
-            <name>IXiaomiFingerprint</name>
+            <name>IGoodixFingerprintDaemon</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IGoodixFingerprintDaemonExt</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -518,14 +526,6 @@
         <version>1.0</version>
         <interface>
             <name>IVideoTelephony</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.xiaomi.hardware.fingerprintextension</name>
-        <version>1.0</version>
-        <interface>
-            <name>IXiaomiFingerprint</name>
             <instance>default</instance>
         </interface>
     </hal>
