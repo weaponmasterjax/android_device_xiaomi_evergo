@@ -383,11 +383,17 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Runtime Resource Overlays
 PRODUCT_PACKAGES += \
+    ApertureOverlayEvergo \
     FrameworksResOverlayEvergo \
     TetheringOverlayEvergo \
     WifiOverlayEvergo \
     SystemUIOverlayEvergo \
     SettingsOverlayEvergo
+
+ifneq ($(ARROW_GAPPS),true)
+PRODUCT_PACKAGES += \
+    ApertureQRScannerOverlayEvergo
+endif
 
 # Screen Resolution
 TARGET_SCREEN_HEIGHT := 2400
@@ -415,6 +421,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
+
+# Camera
+PRODUCT_PACKAGES += \
+    Aperture
+
+PRODUCT_PACKAGES += \
+    RemoveCameraPackages
 
 # Soundtrigger
 PRODUCT_PACKAGES += \
