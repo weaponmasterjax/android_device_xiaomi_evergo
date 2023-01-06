@@ -262,6 +262,13 @@ include $(LOCAL_PATH)/configs/props/overrides.mk
 PRODUCT_PACKAGES += \
     MtkInCallService
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2-service.st \
+    com.android.nfc_extras \
+    NfcNci \
+    Tag
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \

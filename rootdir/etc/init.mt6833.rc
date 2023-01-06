@@ -53,6 +53,14 @@ on init
     write /dev/cpuset/system-background/cpus 0-5
     write /dev/cpuset/top-app/cpus 0-7
 
+# nfc
+service nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service.st
+    override
+    class hal
+    user nfc
+    group nfc
+    disabled
+
 on late-init
     write /proc/bootprof "INIT:late-init"
 # enable rcu_expedited
@@ -210,6 +218,49 @@ on post-fs
     # allow ccci_mdinit access ccci_dump
     chown root system /proc/ccci_dump
 
+# Start the NFC HAL service if sku has nfc
+on property:ro.boot.product.hardware.sku=nfc
+    start nfc_hal_service
+
+# Stop the NFC HAL service if sku does not have nfc
+on property:ro.boot.product.hardware.sku=""
+    stop nfc_hal_service
+
+    # Bind nfc files so that It does not exists
+    mount none /dev/null /system/app/NfcNci/NfcNci.apk bind
+    mount none /dev/null /vendor/bin/hw/android.hardware.nfc@1.2-service.st bind
+    mount none /dev/null /vendor/etc/init/android.hardware.nfc@1.2-service.st.rc bind
+    mount none /dev/null /vendor/etc/libnfc-hal-st.conf bind
+    mount none /dev/null /vendor/etc/libnfc-nci.conf bind
+    mount none /dev/null /vendor/etc/st21nfc_conf.txt bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.ese.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.hce.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.hcef.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.uicc.xml bind
+    mount none /dev/null /vendor/etc/permissions/com.android.nfc_extras.xml bind
+    mount none /dev/null /vendor/firmware/96_nfcCard_RTP.bin bind
+    mount none /dev/null /vendor/firmware/98_nfcCardSlow_RTP.bin bind
+    mount none /dev/null /vendor/firmware/NFC_card_rtp.bin bind
+    mount none /dev/null /vendor/firmware/NFC_card_slow_rtp.bin bind
+    mount none /dev/null /vendor/lib/nfc_nci.st21nfc.st.so bind
+    mount none /dev/null /vendor/lib64/nfc_nci.st21nfc.defualt.so bind
+    mount none /dev/null /vendor/lib64/nfc_nci.st21nfc.st.so bind
+    mount none /dev/null /vendor/lib64/android.hardware.nfc@1.0.so bind
+    mount none /dev/null /vendor/lib64/android.hardware.nfc@1.1.so bind
+    mount none /dev/null /vendor/lib64/android.hardware.nfc@1.2.so bind
+    mount none /dev/null /vendor/etc/permissions/com.android.nfc_extras.xml bind
+    mount none /dev/null /product/etc/permissions/android.software.nfc.beam.xml bind
+    mount none /dev/null /system/etc/permissions/android.software.nfc.beam.xml bind
+    mount none /dev/null /system/etc/permissions/com.android.nfc_extras.xml bind
+    mount none /dev/null /system/etc/libnfc-nci.conf bind
+    mount none /dev/null /system/framework/com.android.nfc_extras.jar bind
+    mount none /dev/null /system/lib64/android.hardware.nfc@1.0.so bind
+    mount none /dev/null /system/lib64/android.hardware.nfc@1.1.so bind
+    mount none /dev/null /system/lib64/android.hardware.nfc@1.2.so bind
+    mount none /dev/null /system/lib64/libnfc-nci.so bind
+    mount none /dev/null /system/lib64/libnfc_nci_jni.so bind
+
 on property:ro.factory_mode=1 && property:sys.boot_completed=1
     chown system system /data/local/tmp
     chmod 0777 /data/local/tmp
@@ -268,6 +319,9 @@ on post-fs-data
     chown system system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     restorecon_recursive /mnt/vendor/persist
+
+    #Create nfc
+    mkdir /data/vendor/nfc_socket 0770 nfc nfc
 
     #Create flash folder
     mkdir /data/vendor/flash
