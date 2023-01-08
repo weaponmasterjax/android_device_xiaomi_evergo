@@ -36,8 +36,8 @@
     <!-- Boolean indicating if current platform supports BLE peripheral mode -->
      <bool name="config_bluetooth_le_peripheral_mode_supported">false</bool>
 
-    <!-- Whether camera shutter sound is forced or not  (country specific). -->
-     <bool name="config_camera_sound_forced">true</bool>
+    <!-- Whether camera shutter sound is forced or not. Setting it to true is definitely not a good manner on evergo and in it's country of production. -->
+     <bool name="config_camera_sound_forced">false</bool>
 
      <bool name="config_is_powerbutton_fps">true</bool>
      <bool name="config_fpCancelIfNotIdle">true</bool>
