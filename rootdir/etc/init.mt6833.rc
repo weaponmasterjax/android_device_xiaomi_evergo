@@ -261,6 +261,33 @@ on property:ro.boot.product.hardware.sku=""
     mount none /dev/null /system/lib64/libnfc-nci.so bind
     mount none /dev/null /system/lib64/libnfc_nci_jni.so bind
 
+# Load opal cam files
+on property:ro.boot.board_id=S98018AA1
+
+    mount none /vendor/etc/opal/lib64/libcam.afhal.so /vendor/lib64/libcam.afhal.so bind
+    mount none /vendor/etc/opal/lib64/libcameracustom.camera.isp.so /vendor/lib64/libcameracustom.camera.isp.so bind
+    mount none /vendor/etc/opal/lib64/libcameracustom.lens.so /vendor/lib64/libcameracustom.lens.so bind
+    mount none /vendor/etc/opal/lib64/libcamera.custom.pd_buf_mgr.so /vendor/lib64/libcamera.custom.pd_buf_mgr.so bind
+    mount none /vendor/etc/opal/lib64/libcameracustom.so /vendor/lib64/libcameracustom.so bind
+    mount none /vendor/etc/opal/lib64/libcam.hal3a.cctsvr.so /vendor/lib64/libcam.hal3a.cctsvr.so bind
+    mount none /vendor/etc/opal/lib64/libcam.hal3a.v3.ae.so /vendor/lib64/libcam.hal3a.v3.ae.so bind
+    mount none /vendor/etc/opal/lib64/libcam.hal3a.v3.ai3a.so /vendor/lib64/libcam.hal3a.v3.ai3a.so bind
+    mount none /vendor/etc/opal/lib64/libcam.hal3a.v3.platform.so /vendor/lib64/libcam.hal3a.v3.platform.so bind
+    mount none /vendor/etc/opal/lib64/libcam.hal3a.v3.so /vendor/lib64/libcam.hal3a.v3.so bind
+    mount none /vendor/etc/opal/lib64/libcam.halisp.common.so /vendor/lib64/libcam.halisp.common.so bind
+    mount none /vendor/etc/opal/lib64/libcam.halsensor.so /vendor/lib64/libcam.halsensor.so bind
+    mount none /vendor/etc/opal/lib64/libcam.isptuning.so /vendor/lib64/libcam.isptuning.so bind
+    mount none /vendor/etc/opal/lib64/libcam.tuning.cache.so /vendor/lib64/libcam.tuning.cache.so bind
+    mount none /vendor/etc/opal/lib64/libmtkcam_3rdparty.customer.so /vendor/lib64/libmtkcam_3rdparty.customer.so bind
+    mount none /vendor/etc/opal/lib64/libmtkcam_3rdparty.mtk.so /vendor/lib64/libmtkcam_3rdparty.mtk.so bind
+    mount none /vendor/etc/opal/lib64/libmtkcam_featurepolicy.so /vendor/lib64/libmtkcam_featurepolicy.so bind
+    mount none /vendor/etc/opal/lib64/libmtkcam.logicalmodule.so /vendor/lib64/libmtkcam.logicalmodule.so bind
+    mount none /vendor/etc/opal/lib64/libmtkcam_mapping_mgr.so /vendor/lib64/libmtkcam_mapping_mgr.so bind
+    mount none /vendor/etc/opal/lib64/libmtkcam_metastore.so /vendor/lib64/libmtkcam_metastore.so bind
+    mount none /vendor/etc/opal/lib64/libmtkcam_pipelinepolicy.so /vendor/lib64/libmtkcam_pipelinepolicy.so bind
+    mount none /vendor/etc/opal/lib64/libmtkcam_sysutils.so /vendor/lib64/libmtkcam_sysutils.so bind
+    mount none /vendor/etc/opal/lib64/libmtkcam_tuning_utils.so /vendor/lib64/libmtkcam_tuning_utils.so bind
+
 on property:ro.factory_mode=1 && property:sys.boot_completed=1
     chown system system /data/local/tmp
     chmod 0777 /data/local/tmp
