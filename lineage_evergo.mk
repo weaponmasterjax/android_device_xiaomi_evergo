@@ -24,6 +24,9 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11T 5G
 PRODUCT_MANUFACTURER := Xiaomi
 
+#Shipping with core GApps
+$(call inherit-product-if-exists, vendor/gapps/core/config.mk)
+
 # Build info
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
