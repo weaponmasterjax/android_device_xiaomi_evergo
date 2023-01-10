@@ -34,21 +34,21 @@
     </reference>
     <reference name="DEFAULT_MEDIA_VOLUME_CURVE">
     <!-- Default Media reference Volume Curve -->
-        <point>1,-6000</point>
-        <point>20,-5000</point>
+        <point>1,-5000</point>
+        <point>20,-4400</point>
         <point>60,-3500</point>
-        <point>100,-2200</point>
+        <point>100,-2100</point>
     </reference>
     <reference name="DEFAULT_DEVICE_CATEGORY_HEADSET_VOLUME_CURVE">
     <!--Default Volume Curve -->
-        <point>1,-5550</point>
+        <point>1,-5250</point>
         <point>33,-4150</point>
         <point>66,-2200</point>
         <point>100,0</point>
     </reference>
     <reference name="DEFAULT_DEVICE_CATEGORY_SPEAKER_VOLUME_CURVE">
     <!-- Default is Speaker Media Volume Curve -->
-        <point>1,-6200</point>
+        <point>1,-6000</point>
         <point>20,-5500</point>
         <point>60,-3500</point>
         <point>100,-2000</point>
@@ -61,11 +61,11 @@
         <point>100,0</point>
     </reference>
     <reference name="DEFAULT_DEVICE_CATEGORY_EXT_MEDIA_VOLUME_CURVE">
-    <!-- Default is Ext Media System Volume Curve -->
-        <point>1,-6500</point>
-        <point>20,-5000</point>
-        <point>60,-3500</point>
-        <point>100,-1100</point>
+    <!-- Default is Ext Media System Volume Curve Assumed as shutter and lock-->
+        <point>1,-4300</point>
+        <point>20,-3100</point>
+        <point>60,-2000</point>
+        <point>100,-800</point>
     </reference>
     <reference name="DEFAULT_HEARING_AID_VOLUME_CURVE">
     <!-- Default Hearing Aid Volume Curve -->
@@ -84,7 +84,7 @@
         <point>0,-7800</point>
         <point>20,-6000</point>
         <point>60,-4100</point>
-        <point>100,-2000</point>
+        <point>100,-1700</point>
     </reference>
     <reference name="DEFAULT_NON_MUTABLE_HEADSET_VOLUME_CURVE">
     <!--Default non-mutable Volume Curve for headset -->
@@ -97,10 +97,10 @@
     <reference name="DEFAULT_NON_MUTABLE_SPEAKER_VOLUME_CURVE">
     <!-- Default non-mutable Speaker Volume Curve -->
     <!--    based on DEFAULT_DEVICE_CATEGORY_SPEAKER_VOLUME_CURVE -->
-        <point>1,-8800</point>
-        <point>20,-7000</point>
-        <point>60,-5700</point>
-        <point>100,-4000</point>
+        <point>1,-7600</point>
+        <point>20,-6400</point>
+        <point>60,-4200</point>
+        <point>100,-2000</point>
     </reference>
     <reference name="DEFAULT_NON_MUTABLE_EARPIECE_VOLUME_CURVE">
     <!--Default non-mutable Volume Curve -->
@@ -111,12 +111,13 @@
         <point>100,-1300</point>
     </reference>
     <reference name="DEFAULT_NON_MUTABLE_EXT_VOLUME_CURVE">
+    <!--assumed as lock and shutter-->
     <!-- Default non-mutable Ext Media System Volume Curve -->
     <!--     based on DEFAULT_DEVICE_CATEGORY_EXT_MEDIA_VOLUME_CURVE -->
-        <point>0,-5800</point>
-        <point>20,-4000</point>
-        <point>60,-3700</point>
-        <point>100,-1800</point>
+        <point>0,-4500</point>
+        <point>20,-3400</point>
+        <point>60,-2200</point>
+        <point>100,-1000</point>
     </reference>
     <reference name="DEFAULT_NON_MUTABLE_HEARING_AID_VOLUME_CURVE">
     <!-- Default non-mutable Hearing Aid Volume Curve -->
