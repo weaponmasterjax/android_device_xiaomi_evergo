@@ -157,11 +157,6 @@ wifi.direct.interface=p2p0
 wifi.interface=wlan0
 wifi.tethering.interface=ap0
 
-# MIUI Camera
-ro.miui.notch=1
-ro.product.mod_device=opal_global
-camera.lab.options=true
-
 # VoLTE
 persist.dbg.allow_ims_off=1
 persist.dbg.volte_avail_ovr=1
