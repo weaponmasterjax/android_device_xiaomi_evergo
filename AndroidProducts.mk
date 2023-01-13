@@ -6,8 +6,7 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/arrow_evergo.mk \
-    $(LOCAL_DIR)/aosp_evergo.mk \
-    $(LOCAL_DIR)/lineage_evergo.mk
+    $(LOCAL_DIR)/aosp_evergo.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_evergo-user \
@@ -15,7 +14,4 @@ COMMON_LUNCH_CHOICES := \
     aosp_evergo-eng \
     arrow_evergo-user \
     arrow_evergo-userdebug \
-    arrow_evergo-eng \
-    lineage_evergo-user \
-    lineage_evergo-userdebug \
-    lineage_evergo-eng
+    arrow_evergo-eng
