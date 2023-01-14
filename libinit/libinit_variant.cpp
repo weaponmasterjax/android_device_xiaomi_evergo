@@ -39,7 +39,6 @@ void set_variant_props(const variant_info_t variant) {
         set_ro_build_prop("fingerprint", variant.build_fingerprint);
         property_override("ro.product.bootimage.device", variant.device);
         property_override("ro.product.bootimage.name", variant.name);
-        property_override("ro.product.mod_device", variant.name);
         property_override("ro.bootimage.build.fingerprint", variant.build_fingerprint);
 
         property_override("ro.product.board", variant.device);
