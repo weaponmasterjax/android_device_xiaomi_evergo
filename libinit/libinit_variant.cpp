@@ -14,14 +14,17 @@ using android::base::GetProperty;
 
 #define BID_PROP "ro.boot.board_id"
 #define SKU_PROP "ro.boot.product.hardware.sku"
+#define HWV_PROP "ro.boot.hwversion"
 
 void search_variant(const std::vector<variant_info_t> variants) {
     std::string bid_value = GetProperty(BID_PROP, "");
     std::string sku_value = GetProperty(SKU_PROP, "");
+    std::string hwv_value = GetProperty(HWV_PROP, "");
 
     for (const auto& variant : variants) {
         if ((variant.bid_value == "" || variant.bid_value == bid_value) &&
-            (variant.sku_value == "" || variant.sku_value == sku_value)) {
+            (variant.sku_value == "" || variant.sku_value == sku_value) &&
+            (variant.hwv_value == "" || variant.hwv_value == hwv_value)) {
             set_variant_props(variant);
             break;
         }
@@ -47,6 +50,8 @@ void set_variant_props(const variant_info_t variant) {
         property_override("ro.build.description", fingerprint_to_description(variant.build_fingerprint));
     }
 
+    // Set hardware revision
+    property_override("ro.boot.hardware.revision", variant.hwv_value);
     // SafetyNet workaround
     property_override("ro.boot.verifiedbootstate", "green");
     property_override("ro.oem_unlock_supported", "0");
