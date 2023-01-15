@@ -2082,6 +2082,16 @@ lib64/libmtkisp_metadata_sys.so
 lib64/vendor.mediatek.hardware.camera.isphal@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.camera.atms@1.0.so
 
+# MTK Media Extractors
+lib64/extractors/libmtkadpcmextractor.so
+lib64/extractors/libmtkalacextractor.so
+lib64/extractors/libmtkapeextractor.so
+lib64/extractors/libmtkasfextractor.so
+lib64/extractors/libmtkaviextractor.so
+lib64/extractors/libmtkflvextractor.so
+lib64/extractors/libmtkmp3extractor.so
+lib64/extractors/libmtkmpeg2extractor.so
+
 # NFC - from POCO/evergreen_global/evergreen:12/SP1A.210812.016/V13.0.4.0.SGBMIXM:user/release-keys
 vendor/etc/libnfc-hal-st.conf|7d8ca0e39963cb52ec3022faf4dd4c2d
 vendor/etc/libnfc-nci.conf|19e2db26dcf96fc64ef2f911d259b859
