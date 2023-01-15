@@ -47,6 +47,10 @@ void set_variant_props(const variant_info_t variant) {
         property_override("ro.build.description", fingerprint_to_description(variant.build_fingerprint));
     }
 
+    // SafetyNet workaround
+    property_override("ro.boot.verifiedbootstate", "green");
+    property_override("ro.oem_unlock_supported", "0");
+
     if (variant.nfc)
         property_override(SKU_PROP, "nfc");
 }
