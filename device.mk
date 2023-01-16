@@ -260,9 +260,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.product.mod_device=opal_global \
     camera.lab.options=true
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
-
 # MTK In-Call volumes adjusting service
 PRODUCT_PACKAGES += \
     MtkInCallService
