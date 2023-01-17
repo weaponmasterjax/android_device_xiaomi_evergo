@@ -49,7 +49,7 @@
     <array name="config_sfps_sensor_props_0" translatable="false">
         <item></item> <!--item>displayId</item-->
         <item>1077</item> <!--item>sensorLocationX</item-->
-        <item>1065</item> <!--item>sensorLocationY</item-->
+        <item>944</item> <!--item>sensorLocationY</item-->
         <item>115</item> <!--item>sensorRadius</item-->
     </array>
 
