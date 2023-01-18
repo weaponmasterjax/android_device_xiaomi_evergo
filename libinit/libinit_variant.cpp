@@ -14,6 +14,7 @@ using android::base::GetProperty;
 
 #define BID_PROP "ro.boot.board_id"
 #define SKU_PROP "ro.boot.product.hardware.sku"
+#define HWV_PROP "ro.boot.hwversion"
 
 void search_variant(const std::vector<variant_info_t> variants) {
     std::string bid_value = GetProperty(BID_PROP, "");
@@ -39,7 +40,6 @@ void set_variant_props(const variant_info_t variant) {
         set_ro_build_prop("fingerprint", variant.build_fingerprint);
         property_override("ro.product.bootimage.device", variant.device);
         property_override("ro.product.bootimage.name", variant.name);
-        property_override("ro.product.mod_device", variant.name);
         property_override("ro.bootimage.build.fingerprint", variant.build_fingerprint);
 
         property_override("ro.product.board", variant.device);
@@ -47,6 +47,9 @@ void set_variant_props(const variant_info_t variant) {
         property_override("ro.build.product", variant.device);
         property_override("ro.build.description", fingerprint_to_description(variant.build_fingerprint));
     }
+
+    // Set hardware revision
+    property_override("ro.boot.hardware.revision", GetProperty(HWV_PROP, ""));
 
     if (variant.nfc)
         property_override(SKU_PROP, "nfc");

@@ -20,6 +20,14 @@ $(call inherit-product, vendor/xiaomi/evergo/evergo-vendor.mk)
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# Speed profile services and wifi-service to reduce RAM and storage
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
+USE_DEX2OAT_DEBUG := false
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+WITH_DEXPREOPT_DEBUG_INFO := false
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -74,8 +82,7 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session.vendor \
     libtinycompress \
     libaudiofoundation.vendor \
-    libaudiopreprocessing.vendor \
-    tinymix
+    libaudiopreprocessing.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -87,6 +94,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
+
+# ConsumerIr
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-service.xiaomi
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -228,7 +239,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.evergo
+    android.hardware.light-service.xiaomi
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -248,6 +259,13 @@ PRODUCT_COPY_FILES += \
 # Override props
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 include $(LOCAL_PATH)/configs/props/overrides.mk
+include $(LOCAL_PATH)/vendor_logtag.mk
+
+# MIUI Camera
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.miui.notch=1 \
+    ro.product.mod_device=opal_global \
+    camera.lab.options=true
 
 # MTK In-Call volumes adjusting service
 PRODUCT_PACKAGES += \
@@ -307,9 +325,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/com.fingerprints.extension.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.fingerprints.extension.xml
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0.vendor \
@@ -343,7 +358,7 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.insmod.sh \
+    init.insmod.sh
 
 PRODUCT_PACKAGES += \
     fstab.emmc \
@@ -394,10 +409,6 @@ ifneq ($(ARROW_GAPPS),true)
 PRODUCT_PACKAGES += \
     ApertureQRScannerOverlayEvergo
 endif
-
-# Screen Resolution
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
 
 # Seccomp
 PRODUCT_COPY_FILES += \
@@ -478,3 +489,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
+
+# Opal camfix
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/opal,$(TARGET_COPY_OUT_VENDOR)/etc/opal)
