@@ -292,6 +292,9 @@ vendor.mtk.vdec.waitkeyframeforplay=9
 vendor.sys.vm.watermarkscalefactor=1
 vendor.sys.thermal.data.path=/data/vendor/thermal/
 
+# Charger
+ro.charger.enable_suspend=true
+
 # Zram
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=1440
