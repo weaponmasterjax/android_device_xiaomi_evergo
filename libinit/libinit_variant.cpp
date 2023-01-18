@@ -50,9 +50,6 @@ void set_variant_props(const variant_info_t variant) {
 
     // Set hardware revision
     property_override("ro.boot.hardware.revision", GetProperty(HWV_PROP, ""));
-    // SafetyNet workaround
-    property_override("ro.boot.verifiedbootstate", "green");
-    property_override("ro.oem_unlock_supported", "0");
 
     if (variant.nfc)
         property_override(SKU_PROP, "nfc");
