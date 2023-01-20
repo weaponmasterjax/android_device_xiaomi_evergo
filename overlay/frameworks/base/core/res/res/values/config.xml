@@ -55,5 +55,5 @@
         <item>110</item> <!--item>sensorRadius</item-->
     </array>
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
-    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/pd_active</string>
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/usb/pd_active</string>
 </resources>
