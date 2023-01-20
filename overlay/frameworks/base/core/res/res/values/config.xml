@@ -36,6 +36,8 @@
     <!-- Does the device has a fps on power. -->
     <bool name="config_fingerprintWakeAndUnlock">false</bool>
 
+    <bool name="config_fpCancelIfNotIdle">true</bool>
+
     <!-- Pocket Lock -->
     <bool name="config_pocketModeSupported">true</bool>
 
@@ -48,9 +50,9 @@
 
     <array name="config_sfps_sensor_props_0" translatable="false">
         <item></item> <!--item>displayId</item-->
-        <item>1077</item> <!--item>sensorLocationX</item-->
-        <item>944</item> <!--item>sensorLocationY</item-->
-        <item>115</item> <!--item>sensorRadius</item-->
+        <item>1080</item> <!--item>sensorLocationX</item-->
+        <item>955</item> <!--item>sensorLocationY</item-->
+        <item>110</item> <!--item>sensorRadius</item-->
     </array>
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
     <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/pd_active</string>
