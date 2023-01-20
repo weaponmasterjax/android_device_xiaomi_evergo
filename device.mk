@@ -57,14 +57,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio@7.0-impl \
-    android.hardware.audio.common-util.vendor \
-    android.hardware.audio.common@7.0-util.vendor \
-    android.hardware.audio.common@7.0.vendor \
-    android.hardware.audio.effect@7.0-util.vendor \
-    android.hardware.audio.effect@7.0.vendor \
     android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio@7.0-util.vendor \
-    android.hardware.audio@7.0.vendor \
     audio.primary.default \
     audio.r_submix.default \
     audio.usb.default \
