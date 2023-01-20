@@ -261,12 +261,6 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 include $(LOCAL_PATH)/configs/props/overrides.mk
 include $(LOCAL_PATH)/vendor_logtag.mk
 
-# MIUI Camera
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.miui.notch=1 \
-    ro.product.mod_device=opal_global \
-    camera.lab.options=true
-
 # MTK In-Call volumes adjusting service
 PRODUCT_PACKAGES += \
     MtkInCallService
