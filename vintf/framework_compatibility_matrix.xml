@@ -105,14 +105,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>android.hardware.bluetooth.audio</name>
-        <version>2.1-2</version>
-        <interface>
-            <name>IBluetoothAudioProvidersFactory</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>android.hardware.boot</name>
         <version>1.0-2</version>
         <interface>
