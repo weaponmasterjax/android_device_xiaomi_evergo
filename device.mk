@@ -78,7 +78,6 @@ PRODUCT_PACKAGES += \
     audio_policy.stub \
     libaudiofoundation.vendor \
     libavservices_minijail.vendor \
-    libavservices_minijail_vendor \
     libbluetooth_audio_session.vendor \
     libtinycompress \
     libaudiofoundation.vendor \
