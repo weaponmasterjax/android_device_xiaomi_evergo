@@ -38,7 +38,9 @@ void set_variant_props(const variant_info_t variant) {
 
     if (access("/system/bin/recovery", F_OK) != 0) {
         set_ro_build_prop("fingerprint", variant.build_fingerprint);
+        property_override("ro.product.bootimage.brand", variant.brand);
         property_override("ro.product.bootimage.device", variant.device);
+        property_override("ro.product.bootimage.model", variant.model);
         property_override("ro.product.bootimage.name", variant.name);
         property_override("ro.bootimage.build.fingerprint", variant.build_fingerprint);
 
