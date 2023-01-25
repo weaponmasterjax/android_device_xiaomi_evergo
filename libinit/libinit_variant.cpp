@@ -52,6 +52,9 @@ void set_variant_props(const variant_info_t variant) {
 
     // Set hardware revision
     property_override("ro.boot.hardware.revision", GetProperty(HWV_PROP, ""));
+    // Set custom properties
+    property_override("ro.product.wt.boardid", GetProperty(BID_PROP, ""));
+    property_override("ro.product.subproject", GetProperty(BID_PROP, ""));
 
     if (variant.nfc)
         property_override(SKU_PROP, "nfc");
