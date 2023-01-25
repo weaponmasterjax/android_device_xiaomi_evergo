@@ -14,7 +14,7 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 # Inherit from evergo device
 $(call inherit-product, device/xiaomi/evergo/device.mk)
 
-# ArrowOS Stuff
+# AOSP Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
