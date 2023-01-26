@@ -40,7 +40,6 @@ persist.audio.button_jack.switch=0
 persist.binder.check.enable=true
 persist.binder.check.size=200
 persist.enable_task_snapshots=false
-persist.log.tag.Telecom=I
 persist.power.useautobrightadj=true
 persist.radio.apm_sim_not_pwdn=1
 persist.sys.chgdisabled=0

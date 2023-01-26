@@ -188,6 +188,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.log.tag.SimSwitchOP18=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.SlotQueueEntry=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.SpnOverride=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.Telecom=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.UiccCard=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.UiccController=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.UxUtility=$(VENDOR_LOG_LEVEL) \
