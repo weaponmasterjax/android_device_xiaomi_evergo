@@ -19,7 +19,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := evergo
-PRODUCT_NAME := aosp_evergo
+PRODUCT_NAME := dot_evergo
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11T 5G
 PRODUCT_MANUFACTURER := Xiaomi
