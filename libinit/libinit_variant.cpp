@@ -55,6 +55,14 @@ void set_variant_props(const variant_info_t variant) {
     // Set custom properties
     property_override("ro.product.wt.boardid", GetProperty(BID_PROP, ""));
     property_override("ro.product.subproject", GetProperty(BID_PROP, ""));
+    // Set safetynet workarounds
+    property_override("ro.boot.warranty_bit", "0");
+    property_override("ro.is_ever_orange", "0");
+    property_override("ro.vendor.boot.warranty_bit", "0");
+    property_override("ro.vendor.warranty_bit", "0");
+    property_override("ro.warranty_bit", "0");
+    property_override("vendor.boot.vbmeta.device_state", "locked");
+    property_override("vendor.boot.verifiedbootstate", "green");
 
     if (variant.nfc)
         property_override(SKU_PROP, "nfc");
