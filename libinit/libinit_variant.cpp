@@ -15,6 +15,7 @@ using android::base::GetProperty;
 #define BID_PROP "ro.boot.board_id"
 #define SKU_PROP "ro.boot.product.hardware.sku"
 #define HWV_PROP "ro.boot.hwversion"
+#define PRODC_PROP "ro.product.cert"
 
 void search_variant(const std::vector<variant_info_t> variants) {
     std::string bid_value = GetProperty(BID_PROP, "");
@@ -48,6 +49,23 @@ void set_variant_props(const variant_info_t variant) {
         property_override("ro.build.flavor", fingerprint_to_flavor(variant.build_fingerprint));
         property_override("ro.build.product", variant.device);
         property_override("ro.build.description", fingerprint_to_description(variant.build_fingerprint));
+    }
+
+    // Set product cert & system model
+    if (variant.bid_value == "S98016AA1") {
+        property_override(PRODC_PROP, "21091116AI");
+    }
+    if (variant.bid_value == "S98016BA1") {
+        property_override(PRODC_PROP, "21091116AI");
+    }
+    if (variant.bid_value == "S98016LA1") {
+        property_override(PRODC_PROP, "22031116AI");
+    }
+    if (variant.bid_value == "S98017AA1") {
+        property_override(PRODC_PROP, "21091116AG");
+    }
+    if (variant.bid_value == "S98018AA1") {
+        property_override(PRODC_PROP, "22031116BG");
     }
 
     // Set hardware revision
