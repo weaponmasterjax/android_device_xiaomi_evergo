@@ -68,6 +68,12 @@ on late-init
 
 # mount different fs start
 
+service charger /system/bin/chargeonlymode
+    class charger
+    critical
+    group system graphics
+    seclabel u:r:healthd:s0
+
 on charger
     #Set CPU/Dram init parameter
     write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "-1 -1 -1 -1"
