@@ -224,6 +224,9 @@
      <dimen name="status_bar_height_landscape">24.0dip</dimen>
      <dimen name="status_bar_height_portrait">96.0px</dimen>
 
+     <!-- notch -->
+     <string name="config_mainBuiltInDisplayCutout">M 0,0 H -37 V 96 H 37 V 0 H 0 Z</string>
+
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
      <fraction name="config_autoBrightnessAdjustmentMaxGamma">300.0%</fraction>
