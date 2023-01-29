@@ -75,10 +75,6 @@ service charger /system/bin/chargeonlymode
     seclabel u:r:healthd:s0
 
 on charger
-    # Turn backlight on and switch to backlight trigger
-    write /sys/class/leds/lcd-backlight/brightness "1000"
-    write /sys/class/leds/lcd-backlight/trigger "backlight"
-
     #Set CPU/Dram init parameter
     write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "-1 -1 -1 -1"
     write /sys/devices/platform/boot_dramboost/dramboost/dramboost 0
