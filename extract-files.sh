@@ -64,6 +64,9 @@ function blob_fixup() {
     vendor/etc/vintf/manifest/vendor.xiaomi.hardware.vibratorfeature.service.xml)
         sed -i "s/vibratorfeature/default/g" "${2}"
         ;;
+    vendor/lib64/hw/fingerprint.fpc.mt6833.so)
+        sed -i "s|\xDD\xB0\x01\x94|\x1F\x20\x03\xD5|g;s|\xC8\xB0\x01\x94|\x1F\x20\x03\xD5|g" "${2}"
+        ;;
     esac
 }
 
