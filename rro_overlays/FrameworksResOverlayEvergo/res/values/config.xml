@@ -252,11 +252,11 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-     <integer name="config_autoBrightnessBrighteningLightDebounce">3000</integer>
-     <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
+     <integer name="config_autoBrightnessBrighteningLightDebounce">5000</integer>
+     <integer name="config_autoBrightnessDarkeningLightDebounce">5000</integer>
 
     <!-- Light sensor event rate in milliseconds for automatic brightness control. -->
-     <integer name="config_autoBrightnessLightSensorRate">250</integer>
+     <integer name="config_autoBrightnessLightSensorRate">500</integer>
 
     <!-- Operating volatage for bluetooth controller. 0 by default-->
      <integer name="config_bluetooth_operating_voltage_mv">0</integer>
@@ -583,18 +583,6 @@
         <item>21</item>
     </integer-array>
 
-    <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
-         percent. The length of this array is assumed to be one greater than
-         config_screenThresholdLevels. The brightening threshold is calculated as
-         screenBrightness * (1.0f + CONSTRAINT_VALUE). When the new screen brightness is higher
-         than this threshold, it is applied. See the config_screenThresholdLevels description for
-         how the constraint value is chosen. -->
-    <integer-array name="config_screenBrighteningThresholds">
-        <item>100</item>
-    </integer-array>
-    <integer-array name="config_screenDarkeningThresholds">
-        <item>200</item>
-    </integer-array>
     <!-- Array of minimum brightness curve nits -->
     <array name="config_minimumBrightnessCurveNits">
         <item>0.0</item>
