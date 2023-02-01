@@ -262,10 +262,10 @@
      <integer name="config_bluetooth_operating_voltage_mv">0</integer>
 
     <!-- Fast brightness animation ramp rate in brightness units per second-->
-     <integer name="config_brightness_ramp_rate_fast">700</integer>
+     <integer name="config_brightness_ramp_rate_fast">400</integer>
 
     <!-- Slow brightness animation ramp rate in brightness units per second-->
-     <integer name="config_brightness_ramp_rate_slow">200</integer>
+     <integer name="config_brightness_ramp_rate_slow">100</integer>
 
     <!-- Maximum color temperature, in Kelvin, supported by display white balance. -->
      <integer name="config_displayWhiteBalanceColorTemperatureMax">8000</integer>
