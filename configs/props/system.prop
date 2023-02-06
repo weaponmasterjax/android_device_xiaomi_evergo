@@ -10,6 +10,8 @@ dalvik.vm.dex2oat-resolve-startup-strings=true
 dalvik.vm.dex2oat-updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt
 dalvik.vm.dexopt.secondary=true
 dalvik.vm.dexopt.thermal-cutoff=2
+# Dex2oat64
+dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.image-dex2oat-Xms=64m
 dalvik.vm.image-dex2oat-Xmx=64m
 dalvik.vm.image-dex2oat-cpu-set=0,1,2,3
