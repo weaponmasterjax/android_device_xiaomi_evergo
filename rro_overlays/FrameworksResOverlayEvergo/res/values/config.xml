@@ -229,7 +229,7 @@
 
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
-     <fraction name="config_autoBrightnessAdjustmentMaxGamma">250%</fraction>
+     <fraction name="config_autoBrightnessAdjustmentMaxGamma">130%</fraction>
 
     <!-- User activity timeout: Maximum screen dim duration as a percentage of screen off timeout.
     
@@ -252,8 +252,8 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-     <integer name="config_autoBrightnessBrighteningLightDebounce">3000</integer>
-     <integer name="config_autoBrightnessDarkeningLightDebounce">3500</integer>
+     <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
+     <integer name="config_autoBrightnessDarkeningLightDebounce">2500</integer>
 
     <!-- Light sensor event rate in milliseconds for automatic brightness control. -->
      <integer name="config_autoBrightnessLightSensorRate">500</integer>
@@ -262,10 +262,10 @@
      <integer name="config_bluetooth_operating_voltage_mv">0</integer>
 
     <!-- Fast brightness animation ramp rate in brightness units per second-->
-     <integer name="config_brightness_ramp_rate_fast">400</integer>
+     <integer name="config_brightness_ramp_rate_fast">2400</integer>
 
     <!-- Slow brightness animation ramp rate in brightness units per second-->
-     <integer name="config_brightness_ramp_rate_slow">100</integer>
+     <integer name="config_brightness_ramp_rate_slow">1100</integer>
 
     <!-- Maximum color temperature, in Kelvin, supported by display white balance. -->
      <integer name="config_displayWhiteBalanceColorTemperatureMax">8000</integer>
@@ -380,14 +380,14 @@
         <item>1500</item>
         <item>1700</item>
         <item>1900</item>
-        <item>2000</item>
-        <item>2500</item>
-        <item>3000</item>
-        <item>3500</item>
+        <item>2100</item>
+        <item>2300</item>
+        <item>2700</item>
+        <item>3100</item>
+        <item>3300</item>
+        <item>3700</item>
         <item>4000</item>
         <item>4500</item>
-        <item>5000</item>
-        <item>5500</item>
     </integer-array>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
@@ -455,12 +455,12 @@
         <item>1152</item>
         <item>1284</item>
         <item>1418</item>
+        <item>1500</item>
         <item>1600</item>
-        <item>1760</item>
-        <item>1900</item>
-        <item>2000</item>
-        <item>2047</item>
-        <item>2047</item>
+        <item>1700</item>
+        <item>1800</item>
+        <item>1800</item>
+        <item>1947</item>
         <item>2047</item>
         <item>2047</item>
     </integer-array>
