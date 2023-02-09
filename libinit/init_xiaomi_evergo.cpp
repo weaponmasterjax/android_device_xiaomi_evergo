@@ -32,7 +32,7 @@ static const variant_info_t evergo_in_info = {
     .name = "evergo_in",
     .marketname = "Redmi Note 11T 5G",
     .model = "21091116AI",
-    .build_fingerprint = "Redmi/evergo_in/evergo:12/SP1A.210812.016/V13.0.6.0.SGBINXM:user/release-keys",
+    .build_fingerprint = "Redmi/evergo_in/evergo:12/SP1A.210812.016/V13.0.7.0.SGBINXM:user/release-keys",
 
     .nfc = false,
 };
