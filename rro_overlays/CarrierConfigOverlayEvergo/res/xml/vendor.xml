@@ -17,6 +17,7 @@
         <boolean name="carrier_wfc_supports_ims_preferred_bool" value="false" />
         <boolean name="hide_xcap_apn_bool" value="true" />
         <boolean name="hide_wfc_mode_option_in_roaming" value="false" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
         <string-array name="read_only_apn_types_string_array" num="0" />
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
         <map name="apn_default_values_strings_array">
