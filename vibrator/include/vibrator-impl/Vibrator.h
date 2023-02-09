@@ -24,9 +24,9 @@ namespace android {
 namespace hardware {
 namespace vibrator {
 
-const std::string kVibratorState    = "/sys/class/leds/vibrator/state";
-const std::string kVibratorDuration = "/sys/class/leds/vibrator/duration";
-const std::string kVibratorActivate = "/sys/class/leds/vibrator/activate";
+const std::string kVibratorState    = "/sys/bus/i2c/drivers/awinic_haptic/9-005a/state";
+const std::string kVibratorDuration = "/sys/bus/i2c/drivers/awinic_haptic/9-005a/duration";
+const std::string kVibratorActivate = "/sys/bus/i2c/drivers/awinic_haptic/9-005a/activate";
 const std::string kVibratorStrength = "/sys/kernel/thunderquake_engine/level";
 
 static std::map<Effect, int32_t> vibEffects = {
