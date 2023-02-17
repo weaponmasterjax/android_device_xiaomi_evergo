@@ -287,6 +287,13 @@ on property:ro.boot.board_id=S98018AA1
     mount none /vendor/etc/opal/lib64/libmtkcam_pipelinepolicy.so /vendor/lib64/libmtkcam_pipelinepolicy.so bind
     mount none /vendor/etc/opal/lib64/libmtkcam_sysutils.so /vendor/lib64/libmtkcam_sysutils.so bind
     mount none /vendor/etc/opal/lib64/libmtkcam_tuning_utils.so /vendor/lib64/libmtkcam_tuning_utils.so bind
+    mount none /vendor/etc/opal/lib64/libcam.hal3a.v3.dng.so /vendor/lib64/libcam.hal3a.v3.dng.so bind
+
+on property:ro.boot.board_id=S98016AA1
+    mount none /vendor/etc/opal/lib64/libcam.hal3a.v3.so /vendor/lib64/libcam.hal3a.v3.so bind
+    mount none /vendor/etc/opal/lib64/libmtkcam.logicalmodule.so /vendor/lib64/libmtkcam.logicalmodule.so bind
+    mount none /vendor/etc/opal/lib64/libcam.hal3a.v3.dng.so /vendor/lib64/libcam.hal3a.v3.dng.so bind
+    mount none /vendor/etc/opal/lib64/libmtkcam_featurepolicy.so /vendor/lib64/libmtkcam_featurepolicy.so bind
 
 on property:ro.factory_mode=1 && property:sys.boot_completed=1
     chown system system /data/local/tmp
