@@ -157,3 +157,10 @@ prebuilt_etc {
     src: "etc/fstab.mt6833",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "init.batterysecret.rc",
+    src: "etc/init.batterysecret.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}

@@ -16,15 +16,15 @@ $(call inherit-product, device/xiaomi/evergo/device.mk)
 
 # AOSP Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_INCLUDE_AOSP_CHARGER := TRUE
 
-DEVICE_MAINTAINER := mmtrt
+DEVICE_MAINTAINER := weaponmasterjax
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := evergo
 PRODUCT_NAME := aosp_evergo
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Redmi Note 11T 5G
+PRODUCT_MODEL := Redmi Note 11 5G
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Build info

@@ -376,7 +376,8 @@ PRODUCT_PACKAGES += \
     meta_init.modem.rc \
     init.connectivity.rc \
     meta_init.connectivity.common.rc \
-    init.mt6833.rc
+    init.mt6833.rc \
+    init.batterysecret.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6833:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.mt6833
