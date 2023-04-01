@@ -1297,7 +1297,7 @@ service mi_thermald /system/vendor/bin/mi_thermald
     class main
     user root
     group system
-    seclabel u:r:mi_thermald:s0
+    #seclabel u:r:mi_thermald:s0
 
 # Logger
 service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
@@ -1315,3 +1315,31 @@ on post-fs-data
 on property:sys.boot_completed=1
     # Stop the logger service
     stop logger
+
+# start batterysecret
+on property:sys.boot_completed=1
+    chmod 0664 /sys/class/usbpd/usbpd0/usbpd_verifed
+    chmod 0664 /sys/class/usbpd/usbpd0/request_vdm_cmd
+    chmod 0664 /sys/class/usbpd/usbpd0/verify_process
+    chmod 0664 /sys/class/power_supply/usb/pd_authentication
+    chmod 0664 /sys/class/power_supply/bms/authentic
+
+service batterysecret /vendor/bin/batterysecret
+    class last_start
+    user root
+    group system system wakelock
+    disabled
+    #seclabel u:r:batterysecret:s0
+
+on property:sys.boot_completed=1
+    start batterysecret
+
+#run batterysecret in off-charge mode
+on charger
+    start batterysecret
+    chmod 0664 /sys/class/usbpd/usbpd0/usbpd_verifed
+    chmod 0664 /sys/class/usbpd/usbpd0/request_vdm_cmd
+    chmod 0664 /sys/class/usbpd/usbpd0/verify_process
+    chmod 0664 /sys/class/power_supply/usb/pd_authentication
+    chmod 0664 /sys/class/power_supply/bms/authentic
+
